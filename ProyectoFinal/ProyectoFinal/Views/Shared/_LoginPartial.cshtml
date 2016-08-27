@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNet.Identity
+@{BussinesEntities.UsuarioEntity us = (BussinesEntities.UsuarioEntity) Session["User"];
+    if (us.idUsuario != 0)
+    {
+
+        using (Html.BeginForm("LogOff", "Usuarios", FormMethod.Post, new { id = "logoutForm" }))
+    {
+    @Html.AntiForgeryToken()
+    <div class="col-lg-push-9">
+        <ul>
+            <li>
+                @Html.ActionLink("Hola! " + us.nombreUsuario + "!", "PanelControlUsuario", "Usuarios", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+
+    }
+    }
+    else
+    {
+    <div class="col-lg-push-11">
+        <ul>
+            <li>@Html.ActionLink("Registrate!", "Nuevo", "Usuarios", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+            <li>@Html.ActionLink("Ingresar", "Login", "Usuarios", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        </ul>
+     </div>
+    
+    }
+}

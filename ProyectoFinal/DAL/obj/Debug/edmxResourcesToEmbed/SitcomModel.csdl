@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SitcomModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Caracteristica">
+    <Key>
+      <PropertyRef Name="idCaracteristica" />
+    </Key>
+    <Property Name="idCaracteristica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idCategoriaCaracteristicas" Type="Int32" />
+    <Property Name="idTipoCaracteristica" Type="Int32" />
+    <NavigationProperty Name="CategoriaCaracteristicas" Relationship="Self.FK_Caracteristica_CategoriaCaracteristicas" FromRole="Caracteristica" ToRole="CategoriaCaracteristicas" />
+    <NavigationProperty Name="TipoCaracteristica" Relationship="Self.FK_Caracteristica_TipoCaracteristica" FromRole="Caracteristica" ToRole="TipoCaracteristica" />
+    <NavigationProperty Name="CaracteristicasHospedaje" Relationship="Self.FK_CaracteristicasHospedaje_Caracteristicas" FromRole="Caracteristica" ToRole="CaracteristicasHospedaje" />
+  </EntityType>
+  <EntityType Name="CaracteristicasHospedaje">
+    <Key>
+      <PropertyRef Name="idCaracteristicaHospedaje" />
+    </Key>
+    <Property Name="idCaracteristicaHospedaje" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idLugarHospedaje" Type="Int32" />
+    <Property Name="idCaracteristica" Type="Int32" />
+    <NavigationProperty Name="Caracteristica" Relationship="Self.FK_CaracteristicasHospedaje_Caracteristicas" FromRole="CaracteristicasHospedaje" ToRole="Caracteristica" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_CaracteristicasHospedaje_LugarHospedaje" FromRole="CaracteristicasHospedaje" ToRole="LugarHospedaje" />
+  </EntityType>
+  <EntityType Name="CasaDptoOCabana">
+    <Key>
+      <PropertyRef Name="idCasaDptoOCabana" />
+    </Key>
+    <Property Name="idCasaDptoOCabana" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCasaDptoOCabana" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idLugarHospedaje" Type="Int32" />
+    <Property Name="cantidadHabitaciones" Type="Int32" />
+    <Property Name="cantidadAmbientes" Type="Int32" />
+    <Property Name="cantidadBanios" Type="Int32" />
+    <Property Name="idComplejo" Type="Int32" />
+    <Property Name="capacidadMaxima" Type="Int32" />
+    <NavigationProperty Name="Complejo" Relationship="Self.FK_CasaDptoOCabana_Complejo" FromRole="CasaDptoOCabana" ToRole="Complejo" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_CasaDptoOCabana_LugarHospedaje" FromRole="CasaDptoOCabana" ToRole="LugarHospedaje" />
+    <NavigationProperty Name="Disponibilidad" Relationship="Self.FK_Disponibilidad_CasaDptoOCabana" FromRole="CasaDptoOCabana" ToRole="Disponibilidad" />
+  </EntityType>
+  <EntityType Name="CategoriaCaracteristicas">
+    <Key>
+      <PropertyRef Name="idCategoriaCaracteristicas" />
+    </Key>
+    <Property Name="idCategoriaCaracteristicas" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Caracteristica" Relationship="Self.FK_Caracteristica_CategoriaCaracteristicas" FromRole="CategoriaCaracteristicas" ToRole="Caracteristica" />
+  </EntityType>
+  <EntityType Name="CategoriaHospedaje">
+    <Key>
+      <PropertyRef Name="idCategoria" />
+    </Key>
+    <Property Name="idCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Complejo" Relationship="Self.FK_Complejo_CategoriaHospedaje" FromRole="CategoriaHospedaje" ToRole="Complejo" />
+    <NavigationProperty Name="Hotel" Relationship="Self.FK_Hotel_CategoriaHospedaje" FromRole="CategoriaHospedaje" ToRole="Hotel" />
+  </EntityType>
+  <EntityType Name="Comercio">
+    <Key>
+      <PropertyRef Name="idComercio" />
+    </Key>
+    <Property Name="idComercio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idNegocio" Type="Int32" />
+    <Property Name="idRubro" Type="Int32" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Comercio_Negocio" FromRole="Comercio" ToRole="Negocio" />
+    <NavigationProperty Name="Rubro" Relationship="Self.FK_Comercio_Rubro" FromRole="Comercio" ToRole="Rubro" />
+  </EntityType>
+  <EntityType Name="Complejo">
+    <Key>
+      <PropertyRef Name="idComplejo" />
+    </Key>
+    <Property Name="idComplejo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoComplejo" Type="Int32" />
+    <Property Name="idCategoria" Type="Int32" />
+    <Property Name="idLugarHospedaje" Type="Int32" />
+    <NavigationProperty Name="CasaDptoOCabana" Relationship="Self.FK_CasaDptoOCabana_Complejo" FromRole="Complejo" ToRole="CasaDptoOCabana" />
+    <NavigationProperty Name="CategoriaHospedaje" Relationship="Self.FK_Complejo_CategoriaHospedaje" FromRole="Complejo" ToRole="CategoriaHospedaje" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_Complejo_LugarHospedaje" FromRole="Complejo" ToRole="LugarHospedaje" />
+    <NavigationProperty Name="TipoComplejo" Relationship="Self.FK_Complejo_TipoComplejo" FromRole="Complejo" ToRole="TipoComplejo" />
+  </EntityType>
+  <EntityType Name="Disponibilidad">
+    <Key>
+      <PropertyRef Name="idDisponibilidad" />
+    </Key>
+    <Property Name="idDisponibilidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fechaDesde" Type="DateTime" Precision="3" />
+    <Property Name="fechaHasta" Type="DateTime" Precision="3" />
+    <Property Name="idHabitacion" Type="Int32" />
+    <Property Name="idCasaODpto" Type="Int32" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="idEstado" Type="Int32" />
+    <NavigationProperty Name="CasaDptoOCabana" Relationship="Self.FK_Disponibilidad_CasaDptoOCabana" FromRole="Disponibilidad" ToRole="CasaDptoOCabana" />
+    <NavigationProperty Name="EstadoReserva" Relationship="Self.FK_Disponibilidad_EstadoReserva" FromRole="Disponibilidad" ToRole="EstadoReserva" />
+    <NavigationProperty Name="Habitacion" Relationship="Self.FK_Disponibilidad_Habitacion" FromRole="Disponibilidad" ToRole="Habitacion" />
+  </EntityType>
+  <EntityType Name="Domicilio">
+    <Key>
+      <PropertyRef Name="idDomicilio" />
+    </Key>
+    <Property Name="idDomicilio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="calle" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="numero" Type="Int32" />
+    <Property Name="dpto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="barrio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idLocalidad" Type="Int32" />
+    <NavigationProperty Name="Localidad" Relationship="Self.FK_Domicilio_Localidad" FromRole="Domicilio" ToRole="Localidad" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_Domicilio" FromRole="Domicilio" ToRole="Persona" />
+    <NavigationProperty Name="Sucursal" Relationship="Self.FK_Sucursal_Domicilio" FromRole="Domicilio" ToRole="Sucursal" />
+  </EntityType>
+  <EntityType Name="EstadoReserva">
+    <Key>
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEstado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreEstado" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Disponibilidad" Relationship="Self.FK_Disponibilidad_EstadoReserva" FromRole="EstadoReserva" ToRole="Disponibilidad" />
+  </EntityType>
+  <EntityType Name="EstadoTramite">
+    <Key>
+      <PropertyRef Name="idEstadoTramite" />
+    </Key>
+    <Property Name="idEstadoTramite" Type="Int32" Nullable="false" />
+    <Property Name="nombreEstadoTramite" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tramite" Relationship="Self.FK_Tramite_EstadoTramite" FromRole="EstadoTramite" ToRole="Tramite" />
+  </EntityType>
+  <EntityType Name="FotosNegocio">
+    <Key>
+      <PropertyRef Name="idFoto" />
+    </Key>
+    <Property Name="idFoto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="esPrincipal" Type="Boolean" />
+    <Property Name="idNegocio" Type="Int32" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_FotosNegocio_Negocio" FromRole="FotosNegocio" ToRole="Negocio" />
+  </EntityType>
+  <EntityType Name="FotosUsuario">
+    <Key>
+      <PropertyRef Name="idFotoUsuario" />
+    </Key>
+    <Property Name="idFotoUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="idUsuario" Type="Int32" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_FotosUsuario_Usuario" FromRole="FotosUsuario" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Habitacion">
+    <Key>
+      <PropertyRef Name="idHabitacion" />
+    </Key>
+    <Property Name="idHabitacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoHabitacion" Type="Int32" />
+    <Property Name="cantidadBanios" Type="Int32" />
+    <Property Name="balcon" Type="Boolean" />
+    <Property Name="heladera" Type="Boolean" />
+    <Property Name="microondas" Type="Boolean" />
+    <Property Name="idHotel" Type="Int32" />
+    <Property Name="nombreHabitacion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Disponibilidad" Relationship="Self.FK_Disponibilidad_Habitacion" FromRole="Habitacion" ToRole="Disponibilidad" />
+    <NavigationProperty Name="Hotel" Relationship="Self.FK_Habitacion_Hotel" FromRole="Habitacion" ToRole="Hotel" />
+    <NavigationProperty Name="TipoHabitacion" Relationship="Self.FK_Habitacion_TipoHabitacion" FromRole="Habitacion" ToRole="TipoHabitacion" />
+  </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="idHotel" />
+    </Key>
+    <Property Name="idHotel" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCategoria" Type="Int32" />
+    <Property Name="idLugarHospedaje" Type="Int32" />
+    <NavigationProperty Name="CategoriaHospedaje" Relationship="Self.FK_Hotel_CategoriaHospedaje" FromRole="Hotel" ToRole="CategoriaHospedaje" />
+    <NavigationProperty Name="Habitacion" Relationship="Self.FK_Habitacion_Hotel" FromRole="Hotel" ToRole="Habitacion" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_Hotel_LugarHospedaje" FromRole="Hotel" ToRole="LugarHospedaje" />
+  </EntityType>
+  <EntityType Name="Localidad">
+    <Key>
+      <PropertyRef Name="idLocalidad" />
+    </Key>
+    <Property Name="idLocalidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreLocalidad" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idProvincia" Type="Int32" />
+    <Property Name="esCercana" Type="Boolean" />
+    <NavigationProperty Name="Domicilio" Relationship="Self.FK_Domicilio_Localidad" FromRole="Localidad" ToRole="Domicilio" />
+    <NavigationProperty Name="Provincia" Relationship="Self.FK_Localidad_Provincia" FromRole="Localidad" ToRole="Provincia" />
+  </EntityType>
+  <EntityType Name="LugarHospedaje">
+    <Key>
+      <PropertyRef Name="idLugarHospedaje" />
+    </Key>
+    <Property Name="idLugarHospedaje" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idNegocio" Type="Int32" />
+    <Property Name="idTipoLugarHospedaje" Type="Int32" />
+    <Property Name="moduloReservas" Type="Boolean" />
+    <NavigationProperty Name="CaracteristicasHospedaje" Relationship="Self.FK_CaracteristicasHospedaje_LugarHospedaje" FromRole="LugarHospedaje" ToRole="CaracteristicasHospedaje" />
+    <NavigationProperty Name="CasaDptoOCabana" Relationship="Self.FK_CasaDptoOCabana_LugarHospedaje" FromRole="LugarHospedaje" ToRole="CasaDptoOCabana" />
+    <NavigationProperty Name="Complejo" Relationship="Self.FK_Complejo_LugarHospedaje" FromRole="LugarHospedaje" ToRole="Complejo" />
+    <NavigationProperty Name="Hotel" Relationship="Self.FK_Hotel_LugarHospedaje" FromRole="LugarHospedaje" ToRole="Hotel" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_LugarHospedaje_Negocio" FromRole="LugarHospedaje" ToRole="Negocio" />
+    <NavigationProperty Name="TipoLugarHospedaje" Relationship="Self.FK_LugarHospedaje_TipoLugarHospedaje" FromRole="LugarHospedaje" ToRole="TipoLugarHospedaje" />
+  </EntityType>
+  <EntityType Name="Negocio">
+    <Key>
+      <PropertyRef Name="idNegocio" />
+    </Key>
+    <Property Name="idNegocio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="fechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="idTipoNegocio" Type="Int32" />
+    <Property Name="idUsuario" Type="Int32" />
+    <Property Name="estaAprobado" Type="Boolean" />
+    <Property Name="idNegocioModif" Type="Int32" />
+    <NavigationProperty Name="Comercio" Relationship="Self.FK_Comercio_Negocio" FromRole="Negocio" ToRole="Comercio" />
+    <NavigationProperty Name="FotosNegocio" Relationship="Self.FK_FotosNegocio_Negocio" FromRole="Negocio" ToRole="FotosNegocio" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_LugarHospedaje_Negocio" FromRole="Negocio" ToRole="LugarHospedaje" />
+    <NavigationProperty Name="Negocio1" Relationship="Self.FK_Negocio_Negocio" FromRole="Negocio" ToRole="Negocio1" />
+    <NavigationProperty Name="Negocio2" Relationship="Self.FK_Negocio_Negocio" FromRole="Negocio1" ToRole="Negocio" />
+    <NavigationProperty Name="TipoDeNegocio" Relationship="Self.FK_Negocio_TipoDeNegocio" FromRole="Negocio" ToRole="TipoDeNegocio" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Negocio_Usuario" FromRole="Negocio" ToRole="Usuarios" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK_Solicitud_Negocio" FromRole="Negocio" ToRole="Solicitud" />
+    <NavigationProperty Name="Sucursal" Relationship="Self.FK_Sucursal_Negocio" FromRole="Negocio" ToRole="Sucursal" />
+    <NavigationProperty Name="Tramite" Relationship="Self.FK_Tramite_Negocio" FromRole="Negocio" ToRole="Tramite" />
+  </EntityType>
+  <EntityType Name="Paginas">
+    <Key>
+      <PropertyRef Name="idPagina" />
+    </Key>
+    <Property Name="idPagina" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombrePagina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="controlador" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vista" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PaginasXPerfil" Relationship="Self.FK_PaginasXPerfil_Paginas" FromRole="Paginas" ToRole="PaginasXPerfil" />
+  </EntityType>
+  <EntityType Name="PaginasXPerfil">
+    <Key>
+      <PropertyRef Name="idPaginaXPerfil" />
+    </Key>
+    <Property Name="idPaginaXPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPerfil" Type="Int32" Nullable="false" />
+    <Property Name="idPagina" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Paginas" Relationship="Self.FK_PaginasXPerfil_Paginas" FromRole="PaginasXPerfil" ToRole="Paginas" />
+    <NavigationProperty Name="Perfiles" Relationship="Self.FK_PaginasXPerfil_Perfiles" FromRole="PaginasXPerfil" ToRole="Perfiles" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="idPais" />
+    </Key>
+    <Property Name="idPais" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombrePais" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Provincia" Relationship="Self.FK_Provincia_Pais" FromRole="Pais" ToRole="Provincia" />
+  </EntityType>
+  <EntityType Name="Perfiles">
+    <Key>
+      <PropertyRef Name="idPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PaginasXPerfil" Relationship="Self.FK_PaginasXPerfil_Perfiles" FromRole="Perfiles" ToRole="PaginasXPerfil" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Usuarios_Perfiles" FromRole="Perfiles" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="documento" Type="Int32" />
+    <Property Name="idSexo" Type="Int32" />
+    <Property Name="idTelefono" Type="Int32" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="idDomicilio" Type="Int32" />
+    <NavigationProperty Name="Domicilio" Relationship="Self.FK_Persona_Domicilio" FromRole="Persona" ToRole="Domicilio" />
+    <NavigationProperty Name="Sexo" Relationship="Self.FK_Persona_Sexo" FromRole="Persona" ToRole="Sexo" />
+    <NavigationProperty Name="Telefono" Relationship="Self.FK_Persona_Telefono" FromRole="Persona" ToRole="Telefono" />
+    <NavigationProperty Name="TipoDocumento" Relationship="Self.FK_Persona_TipoDocumento" FromRole="Persona" ToRole="TipoDocumento" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Usuarios_Persona" FromRole="Persona" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="idProvincia" />
+    </Key>
+    <Property Name="idProvincia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreProvincia" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idPais" Type="Int32" />
+    <NavigationProperty Name="Localidad" Relationship="Self.FK_Localidad_Provincia" FromRole="Provincia" ToRole="Localidad" />
+    <NavigationProperty Name="Pais" Relationship="Self.FK_Provincia_Pais" FromRole="Provincia" ToRole="Pais" />
+  </EntityType>
+  <EntityType Name="Rubro">
+    <Key>
+      <PropertyRef Name="idRubro" />
+    </Key>
+    <Property Name="idRubro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreRubro" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Comercio" Relationship="Self.FK_Comercio_Rubro" FromRole="Rubro" ToRole="Comercio" />
+  </EntityType>
+  <EntityType Name="Sexo">
+    <Key>
+      <PropertyRef Name="idSexo" />
+    </Key>
+    <Property Name="idSexo" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_Sexo" FromRole="Sexo" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Solicitud">
+    <Key>
+      <PropertyRef Name="idSolicitud" />
+    </Key>
+    <Property Name="idSolicitud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuarioSolicitante" Type="Int32" />
+    <Property Name="fechaDesde" Type="DateTime" Precision="3" />
+    <Property Name="fechaHasta" Type="DateTime" Precision="3" />
+    <Property Name="cantidadPersonas" Type="Int32" />
+    <Property Name="cantidadLugares" Type="Int32" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="idNegocio" Type="Int32" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Solicitud_Negocio" FromRole="Solicitud" ToRole="Negocio" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Solicitud_Usuarios" FromRole="Solicitud" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="idSucursal" />
+    </Key>
+    <Property Name="idSucursal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreSucursal" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idDomicilio" Type="Int32" />
+    <Property Name="idNegocio" Type="Int32" />
+    <Property Name="telefono" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="esPrincipal" Type="Boolean" />
+    <NavigationProperty Name="Domicilio" Relationship="Self.FK_Sucursal_Domicilio" FromRole="Sucursal" ToRole="Domicilio" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Sucursal_Negocio" FromRole="Sucursal" ToRole="Negocio" />
+  </EntityType>
+  <EntityType Name="Telefono">
+    <Key>
+      <PropertyRef Name="idTelefono" />
+    </Key>
+    <Property Name="idTelefono" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="movil" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="fijo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="alternativo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_Telefono" FromRole="Telefono" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoCaracteristica">
+    <Key>
+      <PropertyRef Name="idTipoCaracteristica" />
+    </Key>
+    <Property Name="idTipoCaracteristica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Caracteristica" Relationship="Self.FK_Caracteristica_TipoCaracteristica" FromRole="TipoCaracteristica" ToRole="Caracteristica" />
+  </EntityType>
+  <EntityType Name="TipoComplejo">
+    <Key>
+      <PropertyRef Name="idTipoComplejo" />
+    </Key>
+    <Property Name="idTipoComplejo" Type="Int32" Nullable="false" />
+    <Property Name="nombreTipoComplejo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Complejo" Relationship="Self.FK_Complejo_TipoComplejo" FromRole="TipoComplejo" ToRole="Complejo" />
+  </EntityType>
+  <EntityType Name="TipoDeNegocio">
+    <Key>
+      <PropertyRef Name="idTipoNegocio" />
+    </Key>
+    <Property Name="idTipoNegocio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Negocio_TipoDeNegocio" FromRole="TipoDeNegocio" ToRole="Negocio" />
+  </EntityType>
+  <EntityType Name="TipoDocumento">
+    <Key>
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idTipoDocumento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_TipoDocumento" FromRole="TipoDocumento" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoHabitacion">
+    <Key>
+      <PropertyRef Name="idTipoHabitacion" />
+    </Key>
+    <Property Name="idTipoHabitacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="capacidadMaxima" Type="Int32" />
+    <NavigationProperty Name="Habitacion" Relationship="Self.FK_Habitacion_TipoHabitacion" FromRole="TipoHabitacion" ToRole="Habitacion" />
+  </EntityType>
+  <EntityType Name="TipoLugarHospedaje">
+    <Key>
+      <PropertyRef Name="idTipoLugarHospedaje" />
+    </Key>
+    <Property Name="idTipoLugarHospedaje" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_LugarHospedaje_TipoLugarHospedaje" FromRole="TipoLugarHospedaje" ToRole="LugarHospedaje" />
+  </EntityType>
+  <EntityType Name="TipoTramite">
+    <Key>
+      <PropertyRef Name="idTipoTramite" />
+    </Key>
+    <Property Name="idTipoTramite" Type="Int32" Nullable="false" />
+    <Property Name="nombreTipoTramite" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tramite" Relationship="Self.FK_Tramite_TipoTramite" FromRole="TipoTramite" ToRole="Tramite" />
+  </EntityType>
+  <EntityType Name="Tramite">
+    <Key>
+      <PropertyRef Name="idTramite" />
+    </Key>
+    <Property Name="idTramite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEstadoTramite" Type="Int32" />
+    <Property Name="fechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="fechaFin" Type="DateTime" Precision="3" />
+    <Property Name="idUsuarioSolicitante" Type="Int32" />
+    <Property Name="idUsuarioResponsable" Type="Int32" />
+    <Property Name="idTipoTramite" Type="Int32" />
+    <Property Name="idNegocio" Type="Int32" />
+    <Property Name="comentario" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EstadoTramite" Relationship="Self.FK_Tramite_EstadoTramite" FromRole="Tramite" ToRole="EstadoTramite" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Tramite_Negocio" FromRole="Tramite" ToRole="Negocio" />
+    <NavigationProperty Name="TipoTramite" Relationship="Self.FK_Tramite_TipoTramite" FromRole="Tramite" ToRole="TipoTramite" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Tramite_UsuarioResponsable" FromRole="Tramite" ToRole="Usuarios" />
+    <NavigationProperty Name="Usuarios1" Relationship="Self.FK_Tramite_UsuarioSolicitante" FromRole="Tramite" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="idPerfil" Type="Int32" />
+    <Property Name="idPersona" Type="Int32" />
+    <NavigationProperty Name="FotosUsuario" Relationship="Self.FK_FotosUsuario_Usuario" FromRole="Usuarios" ToRole="FotosUsuario" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Negocio_Usuario" FromRole="Usuarios" ToRole="Negocio" />
+    <NavigationProperty Name="Perfiles" Relationship="Self.FK_Usuarios_Perfiles" FromRole="Usuarios" ToRole="Perfiles" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Usuarios_Persona" FromRole="Usuarios" ToRole="Persona" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK_Solicitud_Usuarios" FromRole="Usuarios" ToRole="Solicitud" />
+    <NavigationProperty Name="Tramite" Relationship="Self.FK_Tramite_UsuarioResponsable" FromRole="Usuarios" ToRole="Tramite" />
+    <NavigationProperty Name="Tramite1" Relationship="Self.FK_Tramite_UsuarioSolicitante" FromRole="Usuarios" ToRole="Tramite" />
+  </EntityType>
+  <Association Name="FK_Caracteristica_CategoriaCaracteristicas">
+    <End Role="CategoriaCaracteristicas" Type="Self.CategoriaCaracteristicas" Multiplicity="0..1" />
+    <End Role="Caracteristica" Type="Self.Caracteristica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriaCaracteristicas">
+        <PropertyRef Name="idCategoriaCaracteristicas" />
+      </Principal>
+      <Dependent Role="Caracteristica">
+        <PropertyRef Name="idCategoriaCaracteristicas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Caracteristica_TipoCaracteristica">
+    <End Role="TipoCaracteristica" Type="Self.TipoCaracteristica" Multiplicity="0..1" />
+    <End Role="Caracteristica" Type="Self.Caracteristica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoCaracteristica">
+        <PropertyRef Name="idTipoCaracteristica" />
+      </Principal>
+      <Dependent Role="Caracteristica">
+        <PropertyRef Name="idTipoCaracteristica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CaracteristicasHospedaje_Caracteristicas">
+    <End Role="Caracteristica" Type="Self.Caracteristica" Multiplicity="0..1" />
+    <End Role="CaracteristicasHospedaje" Type="Self.CaracteristicasHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="idCaracteristica" />
+      </Principal>
+      <Dependent Role="CaracteristicasHospedaje">
+        <PropertyRef Name="idCaracteristica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CaracteristicasHospedaje_LugarHospedaje">
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="0..1" />
+    <End Role="CaracteristicasHospedaje" Type="Self.CaracteristicasHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LugarHospedaje">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Principal>
+      <Dependent Role="CaracteristicasHospedaje">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CasaDptoOCabana_Complejo">
+    <End Role="Complejo" Type="Self.Complejo" Multiplicity="0..1" />
+    <End Role="CasaDptoOCabana" Type="Self.CasaDptoOCabana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Complejo">
+        <PropertyRef Name="idComplejo" />
+      </Principal>
+      <Dependent Role="CasaDptoOCabana">
+        <PropertyRef Name="idComplejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CasaDptoOCabana_LugarHospedaje">
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="0..1" />
+    <End Role="CasaDptoOCabana" Type="Self.CasaDptoOCabana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LugarHospedaje">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Principal>
+      <Dependent Role="CasaDptoOCabana">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disponibilidad_CasaDptoOCabana">
+    <End Role="CasaDptoOCabana" Type="Self.CasaDptoOCabana" Multiplicity="0..1" />
+    <End Role="Disponibilidad" Type="Self.Disponibilidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CasaDptoOCabana">
+        <PropertyRef Name="idCasaDptoOCabana" />
+      </Principal>
+      <Dependent Role="Disponibilidad">
+        <PropertyRef Name="idCasaODpto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Complejo_CategoriaHospedaje">
+    <End Role="CategoriaHospedaje" Type="Self.CategoriaHospedaje" Multiplicity="0..1" />
+    <End Role="Complejo" Type="Self.Complejo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriaHospedaje">
+        <PropertyRef Name="idCategoria" />
+      </Principal>
+      <Dependent Role="Complejo">
+        <PropertyRef Name="idCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hotel_CategoriaHospedaje">
+    <End Role="CategoriaHospedaje" Type="Self.CategoriaHospedaje" Multiplicity="0..1" />
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriaHospedaje">
+        <PropertyRef Name="idCategoria" />
+      </Principal>
+      <Dependent Role="Hotel">
+        <PropertyRef Name="idCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comercio_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Comercio" Type="Self.Comercio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Comercio">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comercio_Rubro">
+    <End Role="Rubro" Type="Self.Rubro" Multiplicity="0..1" />
+    <End Role="Comercio" Type="Self.Comercio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="idRubro" />
+      </Principal>
+      <Dependent Role="Comercio">
+        <PropertyRef Name="idRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Complejo_LugarHospedaje">
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="0..1" />
+    <End Role="Complejo" Type="Self.Complejo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LugarHospedaje">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Principal>
+      <Dependent Role="Complejo">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Complejo_TipoComplejo">
+    <End Role="TipoComplejo" Type="Self.TipoComplejo" Multiplicity="0..1" />
+    <End Role="Complejo" Type="Self.Complejo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoComplejo">
+        <PropertyRef Name="idTipoComplejo" />
+      </Principal>
+      <Dependent Role="Complejo">
+        <PropertyRef Name="idTipoComplejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disponibilidad_EstadoReserva">
+    <End Role="EstadoReserva" Type="Self.EstadoReserva" Multiplicity="0..1" />
+    <End Role="Disponibilidad" Type="Self.Disponibilidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoReserva">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="Disponibilidad">
+        <PropertyRef Name="idEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disponibilidad_Habitacion">
+    <End Role="Habitacion" Type="Self.Habitacion" Multiplicity="0..1" />
+    <End Role="Disponibilidad" Type="Self.Disponibilidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Habitacion">
+        <PropertyRef Name="idHabitacion" />
+      </Principal>
+      <Dependent Role="Disponibilidad">
+        <PropertyRef Name="idHabitacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Domicilio_Localidad">
+    <End Role="Localidad" Type="Self.Localidad" Multiplicity="0..1" />
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidad">
+        <PropertyRef Name="idLocalidad" />
+      </Principal>
+      <Dependent Role="Domicilio">
+        <PropertyRef Name="idLocalidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Domicilio">
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domicilio">
+        <PropertyRef Name="idDomicilio" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idDomicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Domicilio">
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domicilio">
+        <PropertyRef Name="idDomicilio" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idDomicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tramite_EstadoTramite">
+    <End Role="EstadoTramite" Type="Self.EstadoTramite" Multiplicity="0..1" />
+    <End Role="Tramite" Type="Self.Tramite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoTramite">
+        <PropertyRef Name="idEstadoTramite" />
+      </Principal>
+      <Dependent Role="Tramite">
+        <PropertyRef Name="idEstadoTramite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FotosNegocio_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="FotosNegocio" Type="Self.FotosNegocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="FotosNegocio">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FotosUsuario_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="FotosUsuario" Type="Self.FotosUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="FotosUsuario">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Habitacion_Hotel">
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+    <End Role="Habitacion" Type="Self.Habitacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="idHotel" />
+      </Principal>
+      <Dependent Role="Habitacion">
+        <PropertyRef Name="idHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Habitacion_TipoHabitacion">
+    <End Role="TipoHabitacion" Type="Self.TipoHabitacion" Multiplicity="0..1" />
+    <End Role="Habitacion" Type="Self.Habitacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoHabitacion">
+        <PropertyRef Name="idTipoHabitacion" />
+      </Principal>
+      <Dependent Role="Habitacion">
+        <PropertyRef Name="idTipoHabitacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hotel_LugarHospedaje">
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="0..1" />
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LugarHospedaje">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Principal>
+      <Dependent Role="Hotel">
+        <PropertyRef Name="idLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Localidad_Provincia">
+    <End Role="Provincia" Type="Self.Provincia" Multiplicity="0..1" />
+    <End Role="Localidad" Type="Self.Localidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="idProvincia" />
+      </Principal>
+      <Dependent Role="Localidad">
+        <PropertyRef Name="idProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_TipoLugarHospedaje">
+    <End Role="TipoLugarHospedaje" Type="Self.TipoLugarHospedaje" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoLugarHospedaje">
+        <PropertyRef Name="idTipoLugarHospedaje" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idTipoLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Negocio1" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Negocio1">
+        <PropertyRef Name="idNegocioModif" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_TipoDeNegocio">
+    <End Role="TipoDeNegocio" Type="Self.TipoDeNegocio" Multiplicity="0..1" />
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDeNegocio">
+        <PropertyRef Name="idTipoNegocio" />
+      </Principal>
+      <Dependent Role="Negocio">
+        <PropertyRef Name="idTipoNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Negocio">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitud_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tramite_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Tramite" Type="Self.Tramite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Tramite">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaginasXPerfil_Paginas">
+    <End Role="Paginas" Type="Self.Paginas" Multiplicity="1" />
+    <End Role="PaginasXPerfil" Type="Self.PaginasXPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paginas">
+        <PropertyRef Name="idPagina" />
+      </Principal>
+      <Dependent Role="PaginasXPerfil">
+        <PropertyRef Name="idPagina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaginasXPerfil_Perfiles">
+    <End Role="Perfiles" Type="Self.Perfiles" Multiplicity="1" />
+    <End Role="PaginasXPerfil" Type="Self.PaginasXPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfiles">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="PaginasXPerfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provincia_Pais">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="0..1" />
+    <End Role="Provincia" Type="Self.Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="idPais" />
+      </Principal>
+      <Dependent Role="Provincia">
+        <PropertyRef Name="idPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Perfiles">
+    <End Role="Perfiles" Type="Self.Perfiles" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfiles">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Sexo">
+    <End Role="Sexo" Type="Self.Sexo" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sexo">
+        <PropertyRef Name="idSexo" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idSexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Telefono">
+    <End Role="Telefono" Type="Self.Telefono" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Telefono">
+        <PropertyRef Name="idTelefono" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTelefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_TipoDocumento">
+    <End Role="TipoDocumento" Type="Self.TipoDocumento" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDocumento">
+        <PropertyRef Name="idTipoDocumento" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitud_Usuarios">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="idUsuarioSolicitante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tramite_TipoTramite">
+    <End Role="TipoTramite" Type="Self.TipoTramite" Multiplicity="0..1" />
+    <End Role="Tramite" Type="Self.Tramite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoTramite">
+        <PropertyRef Name="idTipoTramite" />
+      </Principal>
+      <Dependent Role="Tramite">
+        <PropertyRef Name="idTipoTramite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tramite_UsuarioResponsable">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Tramite" Type="Self.Tramite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Tramite">
+        <PropertyRef Name="idUsuarioResponsable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tramite_UsuarioSolicitante">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Tramite" Type="Self.Tramite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Tramite">
+        <PropertyRef Name="idUsuarioSolicitante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SitcomEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Caracteristica" EntityType="Self.Caracteristica" />
+    <EntitySet Name="CaracteristicasHospedaje" EntityType="Self.CaracteristicasHospedaje" />
+    <EntitySet Name="CasaDptoOCabana" EntityType="Self.CasaDptoOCabana" />
+    <EntitySet Name="CategoriaCaracteristicas" EntityType="Self.CategoriaCaracteristicas" />
+    <EntitySet Name="CategoriaHospedaje" EntityType="Self.CategoriaHospedaje" />
+    <EntitySet Name="Comercio" EntityType="Self.Comercio" />
+    <EntitySet Name="Complejo" EntityType="Self.Complejo" />
+    <EntitySet Name="Disponibilidad" EntityType="Self.Disponibilidad" />
+    <EntitySet Name="Domicilio" EntityType="Self.Domicilio" />
+    <EntitySet Name="EstadoReserva" EntityType="Self.EstadoReserva" />
+    <EntitySet Name="EstadoTramite" EntityType="Self.EstadoTramite" />
+    <EntitySet Name="FotosNegocio" EntityType="Self.FotosNegocio" />
+    <EntitySet Name="FotosUsuario" EntityType="Self.FotosUsuario" />
+    <EntitySet Name="Habitacion" EntityType="Self.Habitacion" />
+    <EntitySet Name="Hotel" EntityType="Self.Hotel" />
+    <EntitySet Name="Localidad" EntityType="Self.Localidad" />
+    <EntitySet Name="LugarHospedaje" EntityType="Self.LugarHospedaje" />
+    <EntitySet Name="Negocio" EntityType="Self.Negocio" />
+    <EntitySet Name="Paginas" EntityType="Self.Paginas" />
+    <EntitySet Name="PaginasXPerfil" EntityType="Self.PaginasXPerfil" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" />
+    <EntitySet Name="Perfiles" EntityType="Self.Perfiles" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Provincia" EntityType="Self.Provincia" />
+    <EntitySet Name="Rubro" EntityType="Self.Rubro" />
+    <EntitySet Name="Sexo" EntityType="Self.Sexo" />
+    <EntitySet Name="Solicitud" EntityType="Self.Solicitud" />
+    <EntitySet Name="Sucursal" EntityType="Self.Sucursal" />
+    <EntitySet Name="Telefono" EntityType="Self.Telefono" />
+    <EntitySet Name="TipoCaracteristica" EntityType="Self.TipoCaracteristica" />
+    <EntitySet Name="TipoComplejo" EntityType="Self.TipoComplejo" />
+    <EntitySet Name="TipoDeNegocio" EntityType="Self.TipoDeNegocio" />
+    <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" />
+    <EntitySet Name="TipoHabitacion" EntityType="Self.TipoHabitacion" />
+    <EntitySet Name="TipoLugarHospedaje" EntityType="Self.TipoLugarHospedaje" />
+    <EntitySet Name="TipoTramite" EntityType="Self.TipoTramite" />
+    <EntitySet Name="Tramite" EntityType="Self.Tramite" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK_Caracteristica_CategoriaCaracteristicas" Association="Self.FK_Caracteristica_CategoriaCaracteristicas">
+      <End Role="CategoriaCaracteristicas" EntitySet="CategoriaCaracteristicas" />
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Caracteristica_TipoCaracteristica" Association="Self.FK_Caracteristica_TipoCaracteristica">
+      <End Role="TipoCaracteristica" EntitySet="TipoCaracteristica" />
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CaracteristicasHospedaje_Caracteristicas" Association="Self.FK_CaracteristicasHospedaje_Caracteristicas">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="CaracteristicasHospedaje" EntitySet="CaracteristicasHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CaracteristicasHospedaje_LugarHospedaje" Association="Self.FK_CaracteristicasHospedaje_LugarHospedaje">
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+      <End Role="CaracteristicasHospedaje" EntitySet="CaracteristicasHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CasaDptoOCabana_Complejo" Association="Self.FK_CasaDptoOCabana_Complejo">
+      <End Role="Complejo" EntitySet="Complejo" />
+      <End Role="CasaDptoOCabana" EntitySet="CasaDptoOCabana" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CasaDptoOCabana_LugarHospedaje" Association="Self.FK_CasaDptoOCabana_LugarHospedaje">
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+      <End Role="CasaDptoOCabana" EntitySet="CasaDptoOCabana" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disponibilidad_CasaDptoOCabana" Association="Self.FK_Disponibilidad_CasaDptoOCabana">
+      <End Role="CasaDptoOCabana" EntitySet="CasaDptoOCabana" />
+      <End Role="Disponibilidad" EntitySet="Disponibilidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Complejo_CategoriaHospedaje" Association="Self.FK_Complejo_CategoriaHospedaje">
+      <End Role="CategoriaHospedaje" EntitySet="CategoriaHospedaje" />
+      <End Role="Complejo" EntitySet="Complejo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hotel_CategoriaHospedaje" Association="Self.FK_Hotel_CategoriaHospedaje">
+      <End Role="CategoriaHospedaje" EntitySet="CategoriaHospedaje" />
+      <End Role="Hotel" EntitySet="Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comercio_Negocio" Association="Self.FK_Comercio_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Comercio" EntitySet="Comercio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comercio_Rubro" Association="Self.FK_Comercio_Rubro">
+      <End Role="Rubro" EntitySet="Rubro" />
+      <End Role="Comercio" EntitySet="Comercio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Complejo_LugarHospedaje" Association="Self.FK_Complejo_LugarHospedaje">
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+      <End Role="Complejo" EntitySet="Complejo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Complejo_TipoComplejo" Association="Self.FK_Complejo_TipoComplejo">
+      <End Role="TipoComplejo" EntitySet="TipoComplejo" />
+      <End Role="Complejo" EntitySet="Complejo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disponibilidad_EstadoReserva" Association="Self.FK_Disponibilidad_EstadoReserva">
+      <End Role="EstadoReserva" EntitySet="EstadoReserva" />
+      <End Role="Disponibilidad" EntitySet="Disponibilidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disponibilidad_Habitacion" Association="Self.FK_Disponibilidad_Habitacion">
+      <End Role="Habitacion" EntitySet="Habitacion" />
+      <End Role="Disponibilidad" EntitySet="Disponibilidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Domicilio_Localidad" Association="Self.FK_Domicilio_Localidad">
+      <End Role="Localidad" EntitySet="Localidad" />
+      <End Role="Domicilio" EntitySet="Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Domicilio" Association="Self.FK_Persona_Domicilio">
+      <End Role="Domicilio" EntitySet="Domicilio" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Domicilio" Association="Self.FK_Sucursal_Domicilio">
+      <End Role="Domicilio" EntitySet="Domicilio" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tramite_EstadoTramite" Association="Self.FK_Tramite_EstadoTramite">
+      <End Role="EstadoTramite" EntitySet="EstadoTramite" />
+      <End Role="Tramite" EntitySet="Tramite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FotosNegocio_Negocio" Association="Self.FK_FotosNegocio_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="FotosNegocio" EntitySet="FotosNegocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FotosUsuario_Usuario" Association="Self.FK_FotosUsuario_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="FotosUsuario" EntitySet="FotosUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Habitacion_Hotel" Association="Self.FK_Habitacion_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="Habitacion" EntitySet="Habitacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Habitacion_TipoHabitacion" Association="Self.FK_Habitacion_TipoHabitacion">
+      <End Role="TipoHabitacion" EntitySet="TipoHabitacion" />
+      <End Role="Habitacion" EntitySet="Habitacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hotel_LugarHospedaje" Association="Self.FK_Hotel_LugarHospedaje">
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+      <End Role="Hotel" EntitySet="Hotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Localidad_Provincia" Association="Self.FK_Localidad_Provincia">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Localidad" EntitySet="Localidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_Negocio" Association="Self.FK_LugarHospedaje_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_TipoLugarHospedaje" Association="Self.FK_LugarHospedaje_TipoLugarHospedaje">
+      <End Role="TipoLugarHospedaje" EntitySet="TipoLugarHospedaje" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_Negocio" Association="Self.FK_Negocio_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Negocio1" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_TipoDeNegocio" Association="Self.FK_Negocio_TipoDeNegocio">
+      <End Role="TipoDeNegocio" EntitySet="TipoDeNegocio" />
+      <End Role="Negocio" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_Usuario" Association="Self.FK_Negocio_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Negocio" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitud_Negocio" Association="Self.FK_Solicitud_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Negocio" Association="Self.FK_Sucursal_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tramite_Negocio" Association="Self.FK_Tramite_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Tramite" EntitySet="Tramite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaginasXPerfil_Paginas" Association="Self.FK_PaginasXPerfil_Paginas">
+      <End Role="Paginas" EntitySet="Paginas" />
+      <End Role="PaginasXPerfil" EntitySet="PaginasXPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaginasXPerfil_Perfiles" Association="Self.FK_PaginasXPerfil_Perfiles">
+      <End Role="Perfiles" EntitySet="Perfiles" />
+      <End Role="PaginasXPerfil" EntitySet="PaginasXPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provincia_Pais" Association="Self.FK_Provincia_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Provincia" EntitySet="Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Perfiles" Association="Self.FK_Usuarios_Perfiles">
+      <End Role="Perfiles" EntitySet="Perfiles" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Sexo" Association="Self.FK_Persona_Sexo">
+      <End Role="Sexo" EntitySet="Sexo" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Telefono" Association="Self.FK_Persona_Telefono">
+      <End Role="Telefono" EntitySet="Telefono" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_TipoDocumento" Association="Self.FK_Persona_TipoDocumento">
+      <End Role="TipoDocumento" EntitySet="TipoDocumento" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Persona" Association="Self.FK_Usuarios_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitud_Usuarios" Association="Self.FK_Solicitud_Usuarios">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tramite_TipoTramite" Association="Self.FK_Tramite_TipoTramite">
+      <End Role="TipoTramite" EntitySet="TipoTramite" />
+      <End Role="Tramite" EntitySet="Tramite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tramite_UsuarioResponsable" Association="Self.FK_Tramite_UsuarioResponsable">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Tramite" EntitySet="Tramite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tramite_UsuarioSolicitante" Association="Self.FK_Tramite_UsuarioSolicitante">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Tramite" EntitySet="Tramite" />
+    </AssociationSet>
+    <FunctionImport Name="cambiarCasaODptoNuevoComplejo">
+      <Parameter Name="idNegocioNuevo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="cambiarHabitacionesNuevoHotel" ReturnType="Collection(SitcomModel.cambiarHabitacionesNuevoHotel_Result)">
+      <Parameter Name="idNegocioNuevo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDisponibilidadCasaDpto">
+      <Parameter Name="idCasa" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDisponibilidadComplejo">
+      <Parameter Name="idComplejo" Mode="In" Type="Int32" />
+      <Parameter Name="cantidadCasasSolicitadas" Mode="In" Type="Int32" />
+      <Parameter Name="cantidadPersonasSolicitadas" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDisponibilidadHabitacion">
+      <Parameter Name="idHabitacion" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDisponibilidadHotel">
+      <Parameter Name="idHotel" Mode="In" Type="Int32" />
+      <Parameter Name="cantidadHabitacionesSolicitadas" Mode="In" Type="Int32" />
+      <Parameter Name="cantidadPersonasSolicitadas" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="cambiarHabitacionesNuevoHotel_Result">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+    <Property Type="Int32" Name="Column2" Nullable="true" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DAL.TipoHabitacion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>*@
+
+<p>
+    @Html.ActionLink("Registrar Nuevo Tipo de Habitación", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.nombre)*@
+            @Html.DisplayName("Tipo de Habitación")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idTipoHabitacion }) 
+
+            @*@Html.ActionLink("Details", "Details", new { id=item.idTipoHabitacion }) |
+    @Html.ActionLink("Delete", "Delete", new { id=item.idTipoHabitacion })    No se permite el borrado por cuestiones de integridad. *@
+         
+        </td>
+    </tr>
+}
+
+</table>

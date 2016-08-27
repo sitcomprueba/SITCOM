@@ -1,0 +1,390 @@
+﻿@model BussinesEntities.NegocioEntity
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nuevo Casa/Departamentos</title>
+
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: MAIN CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,200,100,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/iCheck/skins/all.css">
+    <link rel="stylesheet" href="~/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+    <link rel="stylesheet" href="~/assets/plugins/animate.css/animate.min.css">
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR SUBVIEW CONTENTS -->
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="~/assets/plugins/summernote/dist/summernote.css">
+    <link rel="stylesheet" href="~/assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="~/assets/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/DataTables/media/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+    <!-- end: CSS REQUIRED FOR THIS SUBVIEW CONTENTS-->
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+    <link rel="stylesheet" href="~/assets/css/styles-responsive.css">
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+    <link rel="stylesheet" href="~/assets/css/themes/theme-default.css" type="text/css" id="skin_color">
+    <link rel="stylesheet" href="~/assets/css/print.css" type="text/css" media="print" />
+    <!-- end: CORE CSS -->
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+</head>
+
+<body>
+    @using (Html.BeginForm("NuevoLugarHospedaje", "Negocios", new { ReturnUrl = ViewBag.ReturnUrl, TipoHospedaje = 1 }, FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+    {
+        
+         <div class="row">
+             <div class="col-lg-6">
+                 <div class="form-group">
+                     <div class="col-xs-12 col-lg-offset-1">
+                         @Html.Label("Nombre:", new { @class = "control-label" })
+                         <br />
+                         @Html.TextBoxFor(model => model.nombre, new { @class = "form-control", style = "width:300px;" })
+                         @Html.ValidationMessageFor(model => model.nombre)
+                     </div>
+                 </div>
+                 <div class="form-group">
+                     <div class="col-xs-12 col-lg-offset-1">
+                         @Html.Label("Descripcion:", new { @class = "control-label" })
+
+                         @Html.TextAreaFor(model => model.descripcion, new { @class = "autosize form-control", style = "width:300px; height:100px;", id = "form-field-24" })
+                         @Html.ValidationMessageFor(model => model.descripcion)
+                     </div>
+                 </div>
+
+                 <div class="form-group">
+                     <div class="col-xs-12 col-lg-offset-1">
+                         @Html.Label("Teléfono:", new { @class = "control-label" })
+
+                         @Html.TextBoxFor(model => model.Sucursal.FirstOrDefault().telefono, string.Empty, new { id = "telefono", @class = "form-control", style = "width:300px;" })
+                         @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().telefono)
+                     </div>
+                 </div>
+            </div>
+             <div class="col-lg-6">
+                 <h5 class="panel-title">Imagen <span class="text-bold">Principal</span></h5>
+                 <hr>
+
+                 <div class="form-group">
+                     <div class="col-lg-6 col-lg-offset-3">
+                         <div class="fileupload fileupload-new" data-provides="fileupload">
+                             <div class="fileupload-new thumbnail">
+                                 <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                             </div>
+                             <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                             <div>
+                                 <span class="btn btn-light-grey btn-file">
+                                     <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span>
+                                     <span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                     <input type="file" name="imagenPrinc" id="imagenPrinc">
+                                 </span>
+                                 <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                     <i class="fa fa-times"></i> Eliminar
+                                 </a>
+                             </div>
+                         </div>
+                     </div>
+
+                 </div>
+             </div>
+        </div>
+  
+              <br />
+
+        <br />
+         <div class="row">
+             <div class="col-lg-12">
+                 <h5 class="panel-title">Datos <span class="text-bold">Domicilio</span></h5>
+                 <hr>
+                 <div class="alert alert-info">
+                     <button data-dismiss="alert" class="close">
+                         &times;
+                     </button>
+                     RECORDÁ QUE LA PUBLICACIÓN DE NEGOCIOS ESTA LIMITADA A LA LOCALIDAD DE <strong>LA FALDA, Y LOCALIDADES ALEDAÑAS. </strong>
+                 </div>
+
+                 <div class="col-lg-6">
+                     <div class="form-group">
+                         <div id="Localidades" class="col-xs-12 col-lg-offset-1">
+                             @Html.Label("Localidad:", new { @class = "control-label" })
+                             <br />
+                             @Html.DropDownList("localidadSeleccionada", new SelectList(Model.Sucursal.FirstOrDefault().Domicilio.listLocalidadesCercanas, "idLocalidad", "nombreLocalidad", Model.Sucursal.FirstOrDefault().Domicilio.localidadSeleccionada), string.Empty)
+                         </div>
+                     </div>
+
+                     <div class="form-group">
+
+                         <div class="col-xs-12 col-lg-offset-1">
+                             @Html.Label("Barrio:", new { @class = "control-label" })
+                             <br />
+                             @Html.Editor("barrio", new { @class = "form-control", style = "width:300px;" })
+                             @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio)
+                         </div>
+                     </div>
+                     <div class="form-group">
+
+                         <div class="col-xs-12 col-lg-offset-1">
+                             @Html.Label("Calle:", new { @class = "control-label" })
+                             <br />
+                             @Html.Editor("calle", new { @class = "form-control", style = "width:300px;" })
+                             @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle)
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-6">
+                     <div class="form-group">
+
+                         <div class="col-xs-12 col-lg-offset-1">
+                             @Html.Label("Número:", new { @class = "control-label" })
+                             <br />
+                             @Html.Editor("numero", new { @class = "form-control", style = "width:300px;" })
+                             @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero)
+                         </div>
+                     </div>
+
+                     <div class="form-group">
+
+                         <div class="col-xs-12 col-lg-offset-1">
+                             @Html.Label("Dpto:", new { @class = "control-label"})
+                             <br />
+                             @Html.Editor("dpto", new { @class = "form-control", style = "width:300px;" })
+                             @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto)
+                         </div>
+                     </div>
+                 </div>
+                  <br />
+             </div>
+             
+
+           
+         </div> 
+    <br />
+        <br />
+        
+   <div class="row">
+       <h4 class="panel-title">Características <span class="text-bold">Casa/Departamento</span></h4>
+       <hr>
+       <div class="col-lg-10 col-lg-offset-2">
+    <div class="form-group">
+        @Html.Label("Características:", new { @class = "control-label" })
+        <ul>
+            @{
+        List<DAL.Caracteristica> carac = ViewBag.Carac;
+        foreach (var item in carac)
+        {
+            if (item.idTipoCaracteristica == 1 || item.idTipoCaracteristica == 2)
+            {
+                <li class="col-md-6 col-sm-4">
+                    @Html.CheckBox(item.nombre, new { id = item.idCaracteristica }) @Html.Label(item.nombre, new { @class = "control-label" })
+
+                    <br />
+                </li>
+            }
+        }
+            }
+        </ul>
+    </div>
+</div>
+</div>
+
+     
+
+
+         <br />
+    <br />
+    
+     <div class="row">
+        <h4 class="panel-title">Imágenes <span class="text-bold">Casa/Departamento</span></h4>
+        <hr>
+        <div class="form-group">
+
+            <div class="row">
+
+                <div class="col-md-2 col-lg-offset-3">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                        <div>
+                            <span class="btn btn-light-grey btn-file">
+                                <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span><span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                <input type="file" name="imagenMuestra1" id="imagenMuestra1" />
+                            </span>
+                            <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                <i class="fa fa-times"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                        <div>
+                            <span class="btn btn-light-grey btn-file">
+                                <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span><span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                <input type="file" name="imagenMuestra2" id="imagenMuestra2" />
+                            </span>
+                            <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                <i class="fa fa-times"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                        <div>
+                            <span class="btn btn-light-grey btn-file">
+                                <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span><span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                <input type="file" name="imagenMuestra3" id="imagenMuestra3" />
+                            </span>
+                            <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                <i class="fa fa-times"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-2 col-lg-offset-3">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                        <div>
+                            <span class="btn btn-light-grey btn-file">
+                                <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span><span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                <input type="file" name="imagenMuestra4" id="imagenMuestra4" />
+                            </span>
+                            <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                <i class="fa fa-times"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                        <div>
+                            <span class="btn btn-light-grey btn-file">
+                                <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span><span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                <input type="file" name="imagenMuestra5" id="imagenMuestra5" />
+                            </span>
+                            <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                <i class="fa fa-times"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA?text=no+image" alt="" />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                        <div>
+                            <span class="btn btn-light-grey btn-file">
+                                <span class="fileupload-new"><i class="fa fa-picture-o"></i> Cargar Imagen</span><span class="fileupload-exists"><i class="fa fa-picture-o"></i> Cambiar</span>
+                                <input type="file" name="imagenMuestra6" id="imagenMuestra6" />
+                            </span>
+                            <a href="#" class="btn fileupload-exists btn-light-grey" data-dismiss="fileupload">
+                                <i class="fa fa-times"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-10">
+                <button type="submit" class="btn btn-green">
+                    REGISTRAR
+                    <i class="fa fa-arrow-circle-right"></i>
+                </button>
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+        @ViewBag.Error
+    }
+    <script src="~/assets/plugins/jQuery/jquery-2.1.1.min.js"></script>
+    <!--<![endif]-->
+    <script src="~/assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/plugins/blockUI/jquery.blockUI.js"></script>
+    <script src="~/assets/plugins/iCheck/jquery.icheck.min.js"></script>
+    <script src="~/assets/plugins/moment/min/moment.min.js"></script>
+    <script src="~/assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+    <script src="~/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+    <script src="~/assets/plugins/bootbox/bootbox.min.js"></script>
+    <script src="~/assets/plugins/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="~/assets/plugins/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+    <script src="~/assets/plugins/jquery.appear/jquery.appear.js"></script>
+    <script src="~/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+    <script src="~/assets/plugins/velocity/jquery.velocity.min.js"></script>
+    <script src="~/assets/plugins/TouchSwipe/jquery.touchSwipe.min.js"></script>
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+    <script src="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="~/assets/plugins/jquery-mockjax/jquery.mockjax.js"></script>
+    <script src="~/assets/plugins/toastr/toastr.js"></script>
+    <script src="~/assets/plugins/bootstrap-modal/js/bootstrap-modal.js"></script>
+    <script src="~/assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+    <script src="~/assets/plugins/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+    <script src="~/assets/plugins/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+    <script src="~/assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+    <script src="~/assets/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
+    <script src="~/assets/plugins/DataTables/media/js/DT_bootstrap.js"></script>
+    <script src="~/assets/plugins/truncate/jquery.truncate.js"></script>
+    <script src="~/assets/plugins/summernote/dist/summernote.min.js"></script>
+    <script src="~/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="~/assets/js/subview.js"></script>
+    <script src="~/assets/js/subview-examples.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.custom.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="~/assets/js/main.js"></script>
+    <!-- end: CORE JAVASCRIPTS  -->
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            SVExamples.init();
+            FormElements.init();
+        });
+    </script>
+</body>
+</html>

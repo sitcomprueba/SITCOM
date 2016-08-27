@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SitcomModelStoreContainer" CdmEntityContainer="SitcomEntities">
+    <EntitySetMapping Name="Caracteristica">
+      <EntityTypeMapping TypeName="SitcomModel.Caracteristica">
+        <MappingFragment StoreEntitySet="Caracteristica">
+          <ScalarProperty Name="idCaracteristica" ColumnName="idCaracteristica" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idCategoriaCaracteristicas" ColumnName="idCategoriaCaracteristicas" />
+          <ScalarProperty Name="idTipoCaracteristica" ColumnName="idTipoCaracteristica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CaracteristicasHospedaje">
+      <EntityTypeMapping TypeName="SitcomModel.CaracteristicasHospedaje">
+        <MappingFragment StoreEntitySet="CaracteristicasHospedaje">
+          <ScalarProperty Name="idCaracteristicaHospedaje" ColumnName="idCaracteristicaHospedaje" />
+          <ScalarProperty Name="idLugarHospedaje" ColumnName="idLugarHospedaje" />
+          <ScalarProperty Name="idCaracteristica" ColumnName="idCaracteristica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CasaDptoOCabana">
+      <EntityTypeMapping TypeName="SitcomModel.CasaDptoOCabana">
+        <MappingFragment StoreEntitySet="CasaDptoOCabana">
+          <ScalarProperty Name="idCasaDptoOCabana" ColumnName="idCasaDptoOCabana" />
+          <ScalarProperty Name="nombreCasaDptoOCabana" ColumnName="nombreCasaDptoOCabana" />
+          <ScalarProperty Name="idLugarHospedaje" ColumnName="idLugarHospedaje" />
+          <ScalarProperty Name="cantidadHabitaciones" ColumnName="cantidadHabitaciones" />
+          <ScalarProperty Name="cantidadAmbientes" ColumnName="cantidadAmbientes" />
+          <ScalarProperty Name="cantidadBanios" ColumnName="cantidadBanios" />
+          <ScalarProperty Name="idComplejo" ColumnName="idComplejo" />
+          <ScalarProperty Name="capacidadMaxima" ColumnName="capacidadMaxima" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoriaCaracteristicas">
+      <EntityTypeMapping TypeName="SitcomModel.CategoriaCaracteristicas">
+        <MappingFragment StoreEntitySet="CategoriaCaracteristicas">
+          <ScalarProperty Name="idCategoriaCaracteristicas" ColumnName="idCategoriaCaracteristicas" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoriaHospedaje">
+      <EntityTypeMapping TypeName="SitcomModel.CategoriaHospedaje">
+        <MappingFragment StoreEntitySet="CategoriaHospedaje">
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comercio">
+      <EntityTypeMapping TypeName="SitcomModel.Comercio">
+        <MappingFragment StoreEntitySet="Comercio">
+          <ScalarProperty Name="idComercio" ColumnName="idComercio" />
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+          <ScalarProperty Name="idRubro" ColumnName="idRubro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Complejo">
+      <EntityTypeMapping TypeName="SitcomModel.Complejo">
+        <MappingFragment StoreEntitySet="Complejo">
+          <ScalarProperty Name="idComplejo" ColumnName="idComplejo" />
+          <ScalarProperty Name="idTipoComplejo" ColumnName="idTipoComplejo" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="idLugarHospedaje" ColumnName="idLugarHospedaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disponibilidad">
+      <EntityTypeMapping TypeName="SitcomModel.Disponibilidad">
+        <MappingFragment StoreEntitySet="Disponibilidad">
+          <ScalarProperty Name="idDisponibilidad" ColumnName="idDisponibilidad" />
+          <ScalarProperty Name="fechaDesde" ColumnName="fechaDesde" />
+          <ScalarProperty Name="fechaHasta" ColumnName="fechaHasta" />
+          <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+          <ScalarProperty Name="idCasaODpto" ColumnName="idCasaODpto" />
+          <ScalarProperty Name="habilitado" ColumnName="habilitado" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Domicilio">
+      <EntityTypeMapping TypeName="SitcomModel.Domicilio">
+        <MappingFragment StoreEntitySet="Domicilio">
+          <ScalarProperty Name="idDomicilio" ColumnName="idDomicilio" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="dpto" ColumnName="dpto" />
+          <ScalarProperty Name="barrio" ColumnName="barrio" />
+          <ScalarProperty Name="idLocalidad" ColumnName="idLocalidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoReserva">
+      <EntityTypeMapping TypeName="SitcomModel.EstadoReserva">
+        <MappingFragment StoreEntitySet="EstadoReserva">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="nombreEstado" ColumnName="nombreEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoTramite">
+      <EntityTypeMapping TypeName="SitcomModel.EstadoTramite">
+        <MappingFragment StoreEntitySet="EstadoTramite">
+          <ScalarProperty Name="idEstadoTramite" ColumnName="idEstadoTramite" />
+          <ScalarProperty Name="nombreEstadoTramite" ColumnName="nombreEstadoTramite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FotosNegocio">
+      <EntityTypeMapping TypeName="SitcomModel.FotosNegocio">
+        <MappingFragment StoreEntitySet="FotosNegocio">
+          <ScalarProperty Name="idFoto" ColumnName="idFoto" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="esPrincipal" ColumnName="esPrincipal" />
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FotosUsuario">
+      <EntityTypeMapping TypeName="SitcomModel.FotosUsuario">
+        <MappingFragment StoreEntitySet="FotosUsuario">
+          <ScalarProperty Name="idFotoUsuario" ColumnName="idFotoUsuario" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Habitacion">
+      <EntityTypeMapping TypeName="SitcomModel.Habitacion">
+        <MappingFragment StoreEntitySet="Habitacion">
+          <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+          <ScalarProperty Name="idTipoHabitacion" ColumnName="idTipoHabitacion" />
+          <ScalarProperty Name="cantidadBanios" ColumnName="cantidadBanios" />
+          <ScalarProperty Name="balcon" ColumnName="balcon" />
+          <ScalarProperty Name="heladera" ColumnName="heladera" />
+          <ScalarProperty Name="microondas" ColumnName="microondas" />
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+          <ScalarProperty Name="nombreHabitacion" ColumnName="nombreHabitacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotel">
+      <EntityTypeMapping TypeName="SitcomModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="idLugarHospedaje" ColumnName="idLugarHospedaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Localidad">
+      <EntityTypeMapping TypeName="SitcomModel.Localidad">
+        <MappingFragment StoreEntitySet="Localidad">
+          <ScalarProperty Name="idLocalidad" ColumnName="idLocalidad" />
+          <ScalarProperty Name="nombreLocalidad" ColumnName="nombreLocalidad" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="esCercana" ColumnName="esCercana" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LugarHospedaje">
+      <EntityTypeMapping TypeName="SitcomModel.LugarHospedaje">
+        <MappingFragment StoreEntitySet="LugarHospedaje">
+          <ScalarProperty Name="idLugarHospedaje" ColumnName="idLugarHospedaje" />
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+          <ScalarProperty Name="idTipoLugarHospedaje" ColumnName="idTipoLugarHospedaje" />
+          <ScalarProperty Name="moduloReservas" ColumnName="moduloReservas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Negocio">
+      <EntityTypeMapping TypeName="SitcomModel.Negocio">
+        <MappingFragment StoreEntitySet="Negocio">
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaAlta" ColumnName="fechaAlta" />
+          <ScalarProperty Name="idTipoNegocio" ColumnName="idTipoNegocio" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="estaAprobado" ColumnName="estaAprobado" />
+          <ScalarProperty Name="idNegocioModif" ColumnName="idNegocioModif" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paginas">
+      <EntityTypeMapping TypeName="SitcomModel.Paginas">
+        <MappingFragment StoreEntitySet="Paginas">
+          <ScalarProperty Name="idPagina" ColumnName="idPagina" />
+          <ScalarProperty Name="nombrePagina" ColumnName="nombrePagina" />
+          <ScalarProperty Name="controlador" ColumnName="controlador" />
+          <ScalarProperty Name="vista" ColumnName="vista" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaginasXPerfil">
+      <EntityTypeMapping TypeName="SitcomModel.PaginasXPerfil">
+        <MappingFragment StoreEntitySet="PaginasXPerfil">
+          <ScalarProperty Name="idPaginaXPerfil" ColumnName="idPaginaXPerfil" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="idPagina" ColumnName="idPagina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="SitcomModel.Pais">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+          <ScalarProperty Name="nombrePais" ColumnName="nombrePais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfiles">
+      <EntityTypeMapping TypeName="SitcomModel.Perfiles">
+        <MappingFragment StoreEntitySet="Perfiles">
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="SitcomModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="idSexo" ColumnName="idSexo" />
+          <ScalarProperty Name="idTelefono" ColumnName="idTelefono" />
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="idDomicilio" ColumnName="idDomicilio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provincia">
+      <EntityTypeMapping TypeName="SitcomModel.Provincia">
+        <MappingFragment StoreEntitySet="Provincia">
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="nombreProvincia" ColumnName="nombreProvincia" />
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rubro">
+      <EntityTypeMapping TypeName="SitcomModel.Rubro">
+        <MappingFragment StoreEntitySet="Rubro">
+          <ScalarProperty Name="idRubro" ColumnName="idRubro" />
+          <ScalarProperty Name="nombreRubro" ColumnName="nombreRubro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sexo">
+      <EntityTypeMapping TypeName="SitcomModel.Sexo">
+        <MappingFragment StoreEntitySet="Sexo">
+          <ScalarProperty Name="idSexo" ColumnName="idSexo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Solicitud">
+      <EntityTypeMapping TypeName="SitcomModel.Solicitud">
+        <MappingFragment StoreEntitySet="Solicitud">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="idUsuarioSolicitante" ColumnName="idUsuarioSolicitante" />
+          <ScalarProperty Name="fechaDesde" ColumnName="fechaDesde" />
+          <ScalarProperty Name="fechaHasta" ColumnName="fechaHasta" />
+          <ScalarProperty Name="cantidadPersonas" ColumnName="cantidadPersonas" />
+          <ScalarProperty Name="cantidadLugares" ColumnName="cantidadLugares" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sucursal">
+      <EntityTypeMapping TypeName="SitcomModel.Sucursal">
+        <MappingFragment StoreEntitySet="Sucursal">
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="nombreSucursal" ColumnName="nombreSucursal" />
+          <ScalarProperty Name="idDomicilio" ColumnName="idDomicilio" />
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="esPrincipal" ColumnName="esPrincipal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Telefono">
+      <EntityTypeMapping TypeName="SitcomModel.Telefono">
+        <MappingFragment StoreEntitySet="Telefono">
+          <ScalarProperty Name="idTelefono" ColumnName="idTelefono" />
+          <ScalarProperty Name="movil" ColumnName="movil" />
+          <ScalarProperty Name="fijo" ColumnName="fijo" />
+          <ScalarProperty Name="alternativo" ColumnName="alternativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCaracteristica">
+      <EntityTypeMapping TypeName="SitcomModel.TipoCaracteristica">
+        <MappingFragment StoreEntitySet="TipoCaracteristica">
+          <ScalarProperty Name="idTipoCaracteristica" ColumnName="idTipoCaracteristica" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoComplejo">
+      <EntityTypeMapping TypeName="SitcomModel.TipoComplejo">
+        <MappingFragment StoreEntitySet="TipoComplejo">
+          <ScalarProperty Name="idTipoComplejo" ColumnName="idTipoComplejo" />
+          <ScalarProperty Name="nombreTipoComplejo" ColumnName="nombreTipoComplejo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoDeNegocio">
+      <EntityTypeMapping TypeName="SitcomModel.TipoDeNegocio">
+        <MappingFragment StoreEntitySet="TipoDeNegocio">
+          <ScalarProperty Name="idTipoNegocio" ColumnName="idTipoNegocio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoDocumento">
+      <EntityTypeMapping TypeName="SitcomModel.TipoDocumento">
+        <MappingFragment StoreEntitySet="TipoDocumento">
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoHabitacion">
+      <EntityTypeMapping TypeName="SitcomModel.TipoHabitacion">
+        <MappingFragment StoreEntitySet="TipoHabitacion">
+          <ScalarProperty Name="idTipoHabitacion" ColumnName="idTipoHabitacion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="capacidadMaxima" ColumnName="capacidadMaxima" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoLugarHospedaje">
+      <EntityTypeMapping TypeName="SitcomModel.TipoLugarHospedaje">
+        <MappingFragment StoreEntitySet="TipoLugarHospedaje">
+          <ScalarProperty Name="idTipoLugarHospedaje" ColumnName="idTipoLugarHospedaje" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoTramite">
+      <EntityTypeMapping TypeName="SitcomModel.TipoTramite">
+        <MappingFragment StoreEntitySet="TipoTramite">
+          <ScalarProperty Name="idTipoTramite" ColumnName="idTipoTramite" />
+          <ScalarProperty Name="nombreTipoTramite" ColumnName="nombreTipoTramite" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tramite">
+      <EntityTypeMapping TypeName="SitcomModel.Tramite">
+        <MappingFragment StoreEntitySet="Tramite">
+          <ScalarProperty Name="idTramite" ColumnName="idTramite" />
+          <ScalarProperty Name="idEstadoTramite" ColumnName="idEstadoTramite" />
+          <ScalarProperty Name="fechaAlta" ColumnName="fechaAlta" />
+          <ScalarProperty Name="fechaFin" ColumnName="fechaFin" />
+          <ScalarProperty Name="idUsuarioSolicitante" ColumnName="idUsuarioSolicitante" />
+          <ScalarProperty Name="idUsuarioResponsable" ColumnName="idUsuarioResponsable" />
+          <ScalarProperty Name="idTipoTramite" ColumnName="idTipoTramite" />
+          <ScalarProperty Name="idNegocio" ColumnName="idNegocio" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="SitcomModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="cambiarCasaODptoNuevoComplejo" FunctionName="SitcomModel.Store.cambiarCasaODptoNuevoComplejo" />
+    <FunctionImportMapping FunctionImportName="cambiarHabitacionesNuevoHotel" FunctionName="SitcomModel.Store.cambiarHabitacionesNuevoHotel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SitcomModel.cambiarHabitacionesNuevoHotel_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDisponibilidadCasaDpto" FunctionName="SitcomModel.Store.getDisponibilidadCasaDpto" />
+    <FunctionImportMapping FunctionImportName="getDisponibilidadComplejo" FunctionName="SitcomModel.Store.getDisponibilidadComplejo" />
+    <FunctionImportMapping FunctionImportName="getDisponibilidadHabitacion" FunctionName="SitcomModel.Store.getDisponibilidadHabitacion" />
+    <FunctionImportMapping FunctionImportName="getDisponibilidadHotel" FunctionName="SitcomModel.Store.getDisponibilidadHotel" />
+  </EntityContainerMapping>
+</Mapping>

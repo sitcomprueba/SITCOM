@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CategoriaHospedaje">
+    <Key>
+      <PropertyRef Name="idCategoria" />
+    </Key>
+    <Property Name="idCategoria" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Comercio">
+    <Key>
+      <PropertyRef Name="idComercio" />
+    </Key>
+    <Property Name="idComercio" Type="int" Nullable="false" />
+    <Property Name="idNegocio" Type="int" />
+    <Property Name="idRubro" Type="int" />
+  </EntityType>
+  <EntityType Name="Domicilio">
+    <Key>
+      <PropertyRef Name="idDomicilio" />
+    </Key>
+    <Property Name="idDomicilio" Type="int" Nullable="false" />
+    <Property Name="calle" Type="varchar" MaxLength="150" />
+    <Property Name="numero" Type="int" />
+    <Property Name="dpto" Type="varchar" MaxLength="50" />
+    <Property Name="barrio" Type="varchar" MaxLength="150" />
+    <Property Name="idLocalidad" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.EstadoTramite' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EstadoTramite">
+    <Key>
+      <PropertyRef Name="idEstadoTramite" />
+    </Key>
+    <Property Name="idEstadoTramite" Type="int" Nullable="false" />
+    <Property Name="nombreEstadoTramite" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Localidad">
+    <Key>
+      <PropertyRef Name="idLocalidad" />
+    </Key>
+    <Property Name="idLocalidad" Type="int" Nullable="false" />
+    <Property Name="nombreLocalidad" Type="varchar" MaxLength="150" />
+    <Property Name="idProvincia" Type="int" />
+  </EntityType>
+  <EntityType Name="LugarHospedaje">
+    <Key>
+      <PropertyRef Name="idLugarHospedaje" />
+    </Key>
+    <Property Name="idLugarHospedaje" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="350" />
+    <Property Name="cantidadAmbientes" Type="int" />
+    <Property Name="cantidadHabitaciones" Type="int" />
+    <Property Name="cantidadBanios" Type="int" />
+    <Property Name="idComplejo" Type="int" />
+    <Property Name="idNegocio" Type="int" />
+    <Property Name="idTipoLugarHospedaje" Type="int" />
+    <Property Name="idCategoria" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.MSreplication_options' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="value" Type="bit" Nullable="false" />
+    <Property Name="major_version" Type="int" Nullable="false" />
+    <Property Name="minor_version" Type="int" Nullable="false" />
+    <Property Name="revision" Type="int" Nullable="false" />
+    <Property Name="install_failures" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Negocio">
+    <Key>
+      <PropertyRef Name="idNegocio" />
+    </Key>
+    <Property Name="idNegocio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="300" />
+    <Property Name="descripcion" Type="varchar" MaxLength="500" />
+    <Property Name="fechaAlta" Type="datetime" />
+    <Property Name="idTipoNegocio" Type="int" />
+    <Property Name="idUsuario" Type="int" />
+  </EntityType>
+  <EntityType Name="Paginas">
+    <Key>
+      <PropertyRef Name="idPagina" />
+    </Key>
+    <Property Name="idPagina" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombrePagina" Type="nvarchar" MaxLength="50" />
+    <Property Name="controlador" Type="nvarchar" MaxLength="50" />
+    <Property Name="vista" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PaginasXPerfil">
+    <Key>
+      <PropertyRef Name="idPaginaXPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="int" Nullable="false" />
+    <Property Name="idPagina" Type="int" Nullable="false" />
+    <Property Name="idPaginaXPerfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="idPais" />
+    </Key>
+    <Property Name="idPais" Type="int" Nullable="false" />
+    <Property Name="nombrePais" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Perfiles">
+    <Key>
+      <PropertyRef Name="idPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+    <Property Name="apellido" Type="varchar" MaxLength="150" />
+    <Property Name="email" Type="varchar" MaxLength="250" />
+    <Property Name="documento" Type="int" />
+    <Property Name="idSexo" Type="int" />
+    <Property Name="idTelefono" Type="int" />
+    <Property Name="idTipoDocumento" Type="int" />
+    <Property Name="idDomicilio" Type="int" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="idProvincia" />
+    </Key>
+    <Property Name="idProvincia" Type="int" Nullable="false" />
+    <Property Name="nombreProvincia" Type="varchar" MaxLength="150" />
+    <Property Name="idPais" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.spt_fallback_db' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_dbid" Type="smallint" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="dbid" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="version" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.spt_fallback_dev' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_low" Type="int" />
+    <Property Name="xfallback_drive" Type="char" MaxLength="2" />
+    <Property Name="low" Type="int" Nullable="false" />
+    <Property Name="high" Type="int" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="phyname" Type="varchar" MaxLength="127" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.spt_fallback_usg' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_vstart" Type="int" />
+    <Property Name="dbid" Type="smallint" Nullable="false" />
+    <Property Name="segmap" Type="int" Nullable="false" />
+    <Property Name="lstart" Type="int" Nullable="false" />
+    <Property Name="sizepg" Type="int" Nullable="false" />
+    <Property Name="vstart" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.spt_monitor' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="datetime" Nullable="false" />
+    <Property Name="cpu_busy" Type="int" Nullable="false" />
+    <Property Name="io_busy" Type="int" Nullable="false" />
+    <Property Name="idle" Type="int" Nullable="false" />
+    <Property Name="pack_received" Type="int" Nullable="false" />
+    <Property Name="pack_sent" Type="int" Nullable="false" />
+    <Property Name="connections" Type="int" Nullable="false" />
+    <Property Name="pack_errors" Type="int" Nullable="false" />
+    <Property Name="total_read" Type="int" Nullable="false" />
+    <Property Name="total_write" Type="int" Nullable="false" />
+    <Property Name="total_errors" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="idSucursal" />
+    </Key>
+    <Property Name="idSucursal" Type="int" Nullable="false" />
+    <Property Name="nombreSucursal" Type="varchar" MaxLength="150" />
+    <Property Name="idDomicilio" Type="int" />
+    <Property Name="idComercio" Type="int" />
+    <Property Name="telefono" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Telefono">
+    <Key>
+      <PropertyRef Name="idTelefono" />
+    </Key>
+    <Property Name="idTelefono" Type="int" Nullable="false" />
+    <Property Name="movil" Type="varchar" MaxLength="150" />
+    <Property Name="fijo" Type="varchar" MaxLength="150" />
+    <Property Name="alternativo" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TipoDeNegocio">
+    <Key>
+      <PropertyRef Name="idTipoNegocio" />
+    </Key>
+    <Property Name="idTipoNegocio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TipoDocumento">
+    <Key>
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idTipoDocumento" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.TipoHabitacion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TipoHabitacion">
+    <Key>
+      <PropertyRef Name="idTipoHabitacion" />
+    </Key>
+    <Property Name="idTipoHabitacion" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TipoLugarHospedaje">
+    <Key>
+      <PropertyRef Name="idTipoLugarHospedaje" />
+    </Key>
+    <Property Name="idTipoLugarHospedaje" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'master.dbo.Tramite' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Tramite">
+    <Key>
+      <PropertyRef Name="idTramite" />
+    </Key>
+    <Property Name="idTramite" Type="int" Nullable="false" />
+    <Property Name="idEstadoTramite" Type="int" />
+    <Property Name="fechaAlta" Type="datetime" />
+    <Property Name="fechaFin" Type="datetime" />
+    <Property Name="idUsuarioSolicitante" Type="int" />
+    <Property Name="idUsuarioResponsable" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreUsuario" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="idPerfil" Type="int" />
+    <Property Name="idPersona" Type="int" />
+  </EntityType>
+  <Association Name="FK_Comercio_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Comercio" Type="Self.Comercio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Comercio">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Domicilio_Localidad">
+    <End Role="Localidad" Type="Self.Localidad" Multiplicity="0..1" />
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidad">
+        <PropertyRef Name="idLocalidad" />
+      </Principal>
+      <Dependent Role="Domicilio">
+        <PropertyRef Name="idLocalidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Localidad_Provincia">
+    <End Role="Provincia" Type="Self.Provincia" Multiplicity="0..1" />
+    <End Role="Localidad" Type="Self.Localidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="idProvincia" />
+      </Principal>
+      <Dependent Role="Localidad">
+        <PropertyRef Name="idProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_CategoriaHospedaje">
+    <End Role="CategoriaHospedaje" Type="Self.CategoriaHospedaje" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriaHospedaje">
+        <PropertyRef Name="idCategoria" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_TipoLugarHospedaje">
+    <End Role="TipoLugarHospedaje" Type="Self.TipoLugarHospedaje" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoLugarHospedaje">
+        <PropertyRef Name="idTipoLugarHospedaje" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idTipoLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_TipoDeNegocio">
+    <End Role="TipoDeNegocio" Type="Self.TipoDeNegocio" Multiplicity="0..1" />
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDeNegocio">
+        <PropertyRef Name="idTipoNegocio" />
+      </Principal>
+      <Dependent Role="Negocio">
+        <PropertyRef Name="idTipoNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Negocio">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaginasXPerfil_Paginas">
+    <End Role="Paginas" Type="Self.Paginas" Multiplicity="1" />
+    <End Role="PaginasXPerfil" Type="Self.PaginasXPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paginas">
+        <PropertyRef Name="idPagina" />
+      </Principal>
+      <Dependent Role="PaginasXPerfil">
+        <PropertyRef Name="idPagina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaginasXPerfil_Perfiles">
+    <End Role="Perfiles" Type="Self.Perfiles" Multiplicity="1" />
+    <End Role="PaginasXPerfil" Type="Self.PaginasXPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfiles">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="PaginasXPerfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Domicilio">
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domicilio">
+        <PropertyRef Name="idDomicilio" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idDomicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Telefono">
+    <End Role="Telefono" Type="Self.Telefono" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Telefono">
+        <PropertyRef Name="idTelefono" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTelefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_TipoDocumento">
+    <End Role="TipoDocumento" Type="Self.TipoDocumento" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDocumento">
+        <PropertyRef Name="idTipoDocumento" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provincia_Pais">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="0..1" />
+    <End Role="Provincia" Type="Self.Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="idPais" />
+      </Principal>
+      <Dependent Role="Provincia">
+        <PropertyRef Name="idPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Comercio">
+    <End Role="Comercio" Type="Self.Comercio" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comercio">
+        <PropertyRef Name="idComercio" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idComercio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Domicilio">
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domicilio">
+        <PropertyRef Name="idDomicilio" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idDomicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Perfiles">
+    <End Role="Perfiles" Type="Self.Perfiles" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfiles">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="masterModel1StoreContainer">
+    <EntitySet Name="CategoriaHospedaje" EntityType="Self.CategoriaHospedaje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comercio" EntityType="Self.Comercio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Domicilio" EntityType="Self.Domicilio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Localidad" EntityType="Self.Localidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LugarHospedaje" EntityType="Self.LugarHospedaje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Negocio" EntityType="Self.Negocio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paginas" EntityType="Self.Paginas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaginasXPerfil" EntityType="Self.PaginasXPerfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perfiles" EntityType="Self.Perfiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provincia" EntityType="Self.Provincia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sucursal" EntityType="Self.Sucursal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Telefono" EntityType="Self.Telefono" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoDeNegocio" EntityType="Self.TipoDeNegocio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoLugarHospedaje" EntityType="Self.TipoLugarHospedaje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EstadoTramite" EntityType="Self.EstadoTramite" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EstadoTramite].[idEstadoTramite] AS [idEstadoTramite], 
+    [EstadoTramite].[nombreEstadoTramite] AS [nombreEstadoTramite]
+    FROM [dbo].[EstadoTramite] AS [EstadoTramite]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MSreplication_options" EntityType="Self.MSreplication_options" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MSreplication_options].[optname] AS [optname], 
+    [MSreplication_options].[value] AS [value], 
+    [MSreplication_options].[major_version] AS [major_version], 
+    [MSreplication_options].[minor_version] AS [minor_version], 
+    [MSreplication_options].[revision] AS [revision], 
+    [MSreplication_options].[install_failures] AS [install_failures]
+    FROM [dbo].[MSreplication_options] AS [MSreplication_options]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_db" EntityType="Self.spt_fallback_db" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_fallback_db].[xserver_name] AS [xserver_name], 
+    [spt_fallback_db].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_db].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_db].[xfallback_dbid] AS [xfallback_dbid], 
+    [spt_fallback_db].[name] AS [name], 
+    [spt_fallback_db].[dbid] AS [dbid], 
+    [spt_fallback_db].[status] AS [status], 
+    [spt_fallback_db].[version] AS [version]
+    FROM [dbo].[spt_fallback_db] AS [spt_fallback_db]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_dev" EntityType="Self.spt_fallback_dev" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_fallback_dev].[xserver_name] AS [xserver_name], 
+    [spt_fallback_dev].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_dev].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_dev].[xfallback_low] AS [xfallback_low], 
+    [spt_fallback_dev].[xfallback_drive] AS [xfallback_drive], 
+    [spt_fallback_dev].[low] AS [low], 
+    [spt_fallback_dev].[high] AS [high], 
+    [spt_fallback_dev].[status] AS [status], 
+    [spt_fallback_dev].[name] AS [name], 
+    [spt_fallback_dev].[phyname] AS [phyname]
+    FROM [dbo].[spt_fallback_dev] AS [spt_fallback_dev]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_usg" EntityType="Self.spt_fallback_usg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_fallback_usg].[xserver_name] AS [xserver_name], 
+    [spt_fallback_usg].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_usg].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_usg].[xfallback_vstart] AS [xfallback_vstart], 
+    [spt_fallback_usg].[dbid] AS [dbid], 
+    [spt_fallback_usg].[segmap] AS [segmap], 
+    [spt_fallback_usg].[lstart] AS [lstart], 
+    [spt_fallback_usg].[sizepg] AS [sizepg], 
+    [spt_fallback_usg].[vstart] AS [vstart]
+    FROM [dbo].[spt_fallback_usg] AS [spt_fallback_usg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_monitor" EntityType="Self.spt_monitor" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_monitor].[lastrun] AS [lastrun], 
+    [spt_monitor].[cpu_busy] AS [cpu_busy], 
+    [spt_monitor].[io_busy] AS [io_busy], 
+    [spt_monitor].[idle] AS [idle], 
+    [spt_monitor].[pack_received] AS [pack_received], 
+    [spt_monitor].[pack_sent] AS [pack_sent], 
+    [spt_monitor].[connections] AS [connections], 
+    [spt_monitor].[pack_errors] AS [pack_errors], 
+    [spt_monitor].[total_read] AS [total_read], 
+    [spt_monitor].[total_write] AS [total_write], 
+    [spt_monitor].[total_errors] AS [total_errors]
+    FROM [dbo].[spt_monitor] AS [spt_monitor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TipoHabitacion" EntityType="Self.TipoHabitacion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TipoHabitacion].[idTipoHabitacion] AS [idTipoHabitacion], 
+    [TipoHabitacion].[nombre] AS [nombre]
+    FROM [dbo].[TipoHabitacion] AS [TipoHabitacion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tramite" EntityType="Self.Tramite" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tramite].[idTramite] AS [idTramite], 
+    [Tramite].[idEstadoTramite] AS [idEstadoTramite], 
+    [Tramite].[fechaAlta] AS [fechaAlta], 
+    [Tramite].[fechaFin] AS [fechaFin], 
+    [Tramite].[idUsuarioSolicitante] AS [idUsuarioSolicitante], 
+    [Tramite].[idUsuarioResponsable] AS [idUsuarioResponsable]
+    FROM [dbo].[Tramite] AS [Tramite]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Comercio_Negocio" Association="Self.FK_Comercio_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Comercio" EntitySet="Comercio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Domicilio_Localidad" Association="Self.FK_Domicilio_Localidad">
+      <End Role="Localidad" EntitySet="Localidad" />
+      <End Role="Domicilio" EntitySet="Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Localidad_Provincia" Association="Self.FK_Localidad_Provincia">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Localidad" EntitySet="Localidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_CategoriaHospedaje" Association="Self.FK_LugarHospedaje_CategoriaHospedaje">
+      <End Role="CategoriaHospedaje" EntitySet="CategoriaHospedaje" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_Negocio" Association="Self.FK_LugarHospedaje_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_TipoLugarHospedaje" Association="Self.FK_LugarHospedaje_TipoLugarHospedaje">
+      <End Role="TipoLugarHospedaje" EntitySet="TipoLugarHospedaje" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_TipoDeNegocio" Association="Self.FK_Negocio_TipoDeNegocio">
+      <End Role="TipoDeNegocio" EntitySet="TipoDeNegocio" />
+      <End Role="Negocio" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_Usuario" Association="Self.FK_Negocio_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Negocio" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaginasXPerfil_Paginas" Association="Self.FK_PaginasXPerfil_Paginas">
+      <End Role="Paginas" EntitySet="Paginas" />
+      <End Role="PaginasXPerfil" EntitySet="PaginasXPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaginasXPerfil_Perfiles" Association="Self.FK_PaginasXPerfil_Perfiles">
+      <End Role="Perfiles" EntitySet="Perfiles" />
+      <End Role="PaginasXPerfil" EntitySet="PaginasXPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Domicilio" Association="Self.FK_Persona_Domicilio">
+      <End Role="Domicilio" EntitySet="Domicilio" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Telefono" Association="Self.FK_Persona_Telefono">
+      <End Role="Telefono" EntitySet="Telefono" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_TipoDocumento" Association="Self.FK_Persona_TipoDocumento">
+      <End Role="TipoDocumento" EntitySet="TipoDocumento" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provincia_Pais" Association="Self.FK_Provincia_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Provincia" EntitySet="Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Comercio" Association="Self.FK_Sucursal_Comercio">
+      <End Role="Comercio" EntitySet="Comercio" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Domicilio" Association="Self.FK_Sucursal_Domicilio">
+      <End Role="Domicilio" EntitySet="Domicilio" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Perfiles" Association="Self.FK_Usuarios_Perfiles">
+      <End Role="Perfiles" EntitySet="Perfiles" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

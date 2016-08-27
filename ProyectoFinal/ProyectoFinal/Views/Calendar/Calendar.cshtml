@@ -1,0 +1,204 @@
+﻿@model  BussinesEntities.WeekForMonth
+
+
+@{
+    Layout = null;
+}
+
+<title>My Calendar</title>
+
+<link href="../../Content/SiteModule.css" rel="Stylesheet" type="text/css" />
+<script src="../../Scripts/jquery-ui-1.8.11.min.js" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    <div id="component-header">
+        <a id="@Model.prevMonth" class="month" style="float:left;margin-left:10px;">Prev</a> @DateTime.Now.ToString("MMM") @DateTime.Now.Year <a id="@Model.nextMonth" class="month" style="float:right;margin-right:10px;">Next</a>
+    </div>
+
+    <div>
+        <table id="component-table">
+            <thead>
+                <tr>
+                    <th>
+                        Sun
+                    </th>
+                    <th>
+                        Mon
+                    </th>
+                    <th>
+                        Tue
+                    </th>
+                    <th>
+                        Wed
+                    </th>
+                    <th>
+                        Thurs
+                    </th>
+                    <th>
+                        Fri
+                    </th>
+                    <th>
+                        Sat
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="week1">
+                    @foreach (var item in Model.Week1)
+                    {
+                        if (item != null)
+                        {
+                            if (item.daycolumn == 0 || item.daycolumn == 6)
+                            {
+                                <td class="weekend"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else if (item.Date != DateTime.Today)
+                            {
+                                <td><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else
+                            {
+                                <td class="selected"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                </tr>
+                <tr id="week2">
+                    @foreach (var item in Model.Week2)
+                    {
+                        if (item != null)
+                        {
+                            if (item.daycolumn == 0 || item.daycolumn == 6)
+                            {
+                                <td class="weekend"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else if (item.Date != DateTime.Today)
+                            {
+                                <td><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else
+                            {
+                                <td class="selected"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                </tr>
+                <tr id="week3">
+                    @foreach (var item in Model.Week3)
+                    {
+                        if (item != null)
+                        {
+                            if (item.daycolumn == 0 || item.daycolumn == 6)
+                            {
+                                <td class="weekend"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else if (item.Date != DateTime.Today)
+                            {
+                                <td><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else
+                            {
+                                <td class="selected"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                </tr>
+                <tr id="week4">
+                    @foreach (var item in Model.Week4)
+                    {
+                        if (item != null)
+                        {
+                            if (item.daycolumn == 0 || item.daycolumn == 6)
+                            {
+                                <td class="weekend"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else if (item.Date != DateTime.Today)
+                            {
+                                <td><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else
+                            {
+                                <td class="selected"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                </tr>
+                <tr id="week5">
+                    @foreach (var item in Model.Week5)
+                    {
+                        if (item != null)
+                        {
+                            if (item.daycolumn == 0 || item.daycolumn == 6)
+                            {
+                                <td class="weekend"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else if (item.Date != DateTime.Today)
+                            {
+                                <td><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                            else
+                            {
+                                <td class="selected"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                            }
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                </tr>
+                <tr id="week6">
+                    @if (Model.Week6 != null)
+                    {
+                        foreach (var item in Model.Week6)
+                        {
+                            if (item != null)
+                            {
+                                if (item.daycolumn == 0 || item.daycolumn == 6)
+                                {
+                                    <td class="weekend"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                                }
+                                else if (item.Date != DateTime.Today)
+                                {
+                                    <td><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                                }
+                                else
+                                {
+                                    <td class="selected"><a href="#component-schedule" id="@item.dateStr" class="dt"><h3>@item.dtDay</h3><h4>@item.notification.patientCount <img src="../../Content/img/Layout1/patient_icon.png" alt=""> @item.notification.scheCount <img src="../../Content/img/Layout1/treatment.png" alt=""></h4></a></td>
+                                }
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
+                        }
+                    }
+                </tr>
+            </tbody>
+
+
+        </table>
+    </div>
+}
+
+
+
+
+

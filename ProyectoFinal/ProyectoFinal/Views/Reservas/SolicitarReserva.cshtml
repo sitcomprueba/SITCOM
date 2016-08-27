@@ -1,0 +1,118 @@
+﻿@model BussinesEntities.SolicitudEntity
+@{
+    ViewBag.Title = "SolicitarReserva";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.custom.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        var tipoHospedaje = "@ViewBag.idTipoLugarHospedaje"
+
+        $(document).ready(function () {
+            if (tipoHospedaje != "1") {
+                $("#divCantLugares").show();
+            }
+        });
+    </script>
+</head>
+<body>
+
+<h2>Solicitar Reserva</h2>
+<br />
+<br />
+<h4>DATOS DEL SOLICITANTE</h4>
+<br />
+@{
+    DAL.Persona p = ViewBag.Persona;
+
+    @Html.Label("NOMBRE: ") @p.nombre
+    <br />
+    @Html.Label("APELLIDO: ") @p.apellido
+    <br />
+    @Html.Label("SEXO: ") @p.Sexo.nombre
+    <br />
+    @Html.Label(p.TipoDocumento.nombre + ": ") @p.documento
+    <br />
+    @Html.Label("EMAIL: ") @p.email
+    <br />
+    @Html.Label("APELLIDO: ") @p.apellido
+}
+<br />
+<br />
+<h4>DATOS DEL SOLICITANTE</h4>
+    <br />
+    @using (Html.BeginForm(new { idNegocio = ViewBag.idNegocio }))
+    { 
+        
+ <div class="form-group">
+    @Html.Label("Fecha Desde: ", new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        <input type="text" name="fechaDesde" id="fechaDesde" placeholder="DD/MM/YYYY" />
+    </div>
+</div>
+    <br />
+        <br />
+         <div class="form-group">
+    @Html.Label("Fecha Hasta: ", new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        <input type="text" name="fechaHasta" id="fechaHast" placeholder="DD/MM/YYYY" />
+    </div>
+</div>
+        <br />
+        <br />
+<div class="form-group">
+    @Html.Label("Cantidad de Personas: ", new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.cantidadPersonas)
+        @Html.ValidationMessageFor(model => model.cantidadPersonas)
+    </div>
+</div>
+    <br />
+    <br />
+        int idTipoLugarHospedaje = ViewBag.idTipoLugarHospedaje;
+        string tipoLugares = "";
+
+        switch (idTipoLugarHospedaje)
+        {
+            case 2: tipoLugares = "departamentos/cabañas: ";
+                break;
+            case 3: tipoLugares = "habitaciones: ";
+                break;
+            default:
+                break;
+        }
+
+    <div class="form-group" style="display:none" id="divCantLugares">
+         @Html.Label("Cantidad de " + tipoLugares, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+             @Html.EditorFor(model => model.cantidadLugares)
+             @Html.ValidationMessageFor(model => model.cantidadLugares)
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="form-group">
+         @Html.Label("Consultas: ", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+             @Html.TextArea("observacion")
+        </div>
+    </div>
+    <br />
+    <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="SOLICITAR" class="btn btn-default" />
+            </div>
+        </div>
+    }
+   </body>
+</html>
+

@@ -1,0 +1,500 @@
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\DL.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\GridMvc.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\MvcCheckBoxList.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\GridMvc.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\MvcCheckBoxList.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\GridMvc.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\MvcCheckBoxList.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DL.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\GridMvc.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\MvcCheckBoxList.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DL.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\GridMvc.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\MvcCheckBoxList.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll.config
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\ProyectoFinal.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\DAL.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\DL.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\EntityFramework.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\GridMvc.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\MvcCheckBoxList.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Owin.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\WebGrease.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\BussinesEntities.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\DAL.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\DL.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\EntityFramework.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Helpers.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Mvc.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Optimization.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.Razor.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Newtonsoft.Json.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Antlr3.Runtime.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb

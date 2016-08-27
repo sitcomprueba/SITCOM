@@ -1,0 +1,18 @@
+﻿.ui-jqgrid .ui-pg-input {
+    width: 50px;
+    padding: 0px;
+    height: 20px;
+    max-height: 20px;
+}
+
+.ui-jqgrid .ui-pg-selbox {
+    width: 100px;
+    padding: 0px;
+    height: 28px;
+    max-height: 28px;
+}
+
+.ui-jqgrid .ui-jqgrid-bdiv 
+{
+    overflow: hidden;
+}

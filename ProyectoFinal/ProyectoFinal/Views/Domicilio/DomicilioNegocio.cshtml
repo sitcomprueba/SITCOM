@@ -1,0 +1,54 @@
+﻿@model BussinesEntities.DomicilioEntity
+@{
+    ViewBag.Title = "DomicilioNegocio";
+}
+
+<h2>¡UBICÁ TU NEGOCIO!</h2>
+<br />  
+<h4>
+    RECORDÁ QUE LA REGISTRACIÓN DE NEGOCIOS ES PARA AQUELLOS QUE SE ENCUENTREN EN LA CIUDAD DE LA FALDA,
+    Y ZONAS ALEDAÑAS A LA MISMA, DEFINIDAS POR LA SECRETARÍA DE TURISMO DE LA FALDA.
+</h4>
+<br />
+<br />
+
+<div class="form-group">
+    @Html.Label("Localidades", new { @class = "control-label col-md-2" })
+    <div id="Localidades" class="col-md-10">
+            @Html.DropDownListFor(m => m.Sucursal.FirstOrDefault().Domicilio.localidadSeleccionada, new SelectList(Model.listLocalidadesCercanas, "idLocalidad", "nombreLocalidad", Model.Sucursal.FirstOrDefault().Domicilio.localidadSeleccionada), string.Empty)
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio)
+    </div>
+</div>
+
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle)
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero)
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto)
+    </div>
+</div>
+

@@ -1,0 +1,75 @@
+﻿@model BussinesEntities.NegocioEntity
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.custom.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+</head>
+
+<body>
+    @using (Html.BeginForm("NuevoComercio", "Negocios", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+    {
+             <div class="form-group">
+                    @Html.Label("Nombre del COMERCIO:", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.nombre)
+                        @Html.ValidationMessageFor(model => model.nombre)
+                    </div>
+              </div>
+            
+                <div class="form-group">
+                    @Html.Label("Rubro: ", new { @class = "control-label col-md-2", id = "lblRubro" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.Comercio.FirstOrDefault().idRubro, (SelectList)ViewBag.Rubros, "-- SELECCIONA EL RUBRO --", new { id = "ddlRubros" })
+                        @Html.ValidationMessageFor(model => model.Comercio.FirstOrDefault().idRubro)
+                    </div>
+                </div>
+
+        <div class="form-group">
+            @Html.Label("Descripcion:", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.descripcion, new { @class = "descripcionNegocio" })
+                @Html.ValidationMessageFor(model => model.descripcion)
+            </div>
+        </div>
+    <br />
+        <div class="form-group">
+            @Html.Label("Imagen Principal:", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               <input type="file" name="imagenPrinc" id="imagenPrinc" />
+            </div>
+        </div>
+    <br />
+        <div class="form-group">
+            @Html.Label("Imágebes del Negocio:", new { @class = "control-label col-md-2" })
+            
+            <table>
+                <tr>
+                    <td><input type="file" name="imagenMuestra1" id="imagenMuestra1" /></td>
+                    <td><input type="file" name="imagenMuestra2" id="imagenMuestra2" /></td>
+                    <td><input type="file" name="imagenMuestra3" id="imagenMuestra3" /></td>
+                </tr>
+                <tr>
+                    <td><input type="file" name="imagenMuestra4" id="imagenMuestra4" /></td>
+                    <td><input type="file" name="imagenMuestra5" id="imagenMuestra5" /></td>
+                    <td><input type="file" name="imagenMuestra6" id="imagenMuestra6" /></td>
+                </tr>
+            </table>
+           
+        </div>
+    <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="REGISTRAR COMERCIO" class="btn btn-default" />
+            </div>
+        </div>
+        @ViewBag.Error
+        }
+ </body>
+
+</html>

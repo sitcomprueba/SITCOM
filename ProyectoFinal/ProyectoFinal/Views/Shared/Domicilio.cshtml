@@ -1,0 +1,112 @@
+﻿@model BussinesEntities.DomicilioEntity
+@{
+    ViewBag.Title = "Domicilio";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.custom.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        var returnUrl = "@ViewBag.ReturnUrl"
+
+        $(document).ready(function () {
+            $("#ddlPaises").change(function () {
+                var id = $("#ddlPaises").val();
+                window.location = "../../Domicilio/PaisSeleccionado/?idPaisSeleccionado=" + id + "&returnUrl=" + returnUrl;
+            });
+
+            $("#ddlProvincias").change(function () {
+                var idPais = $("#ddlPaises").val();
+                var idProv = $("#ddlProvincias").val();
+                window.location = "../../Domicilio/ProvinciaSeleccionada/?idProvinciaSeleccionada=" + idProv + "&idPaisSeleccionado=" + idPais + "&returnUrl=" + returnUrl;
+            });
+        });
+    </script>
+</head>
+<body>
+
+    @using(Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Domicilio</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.Label("Paises", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(m => m.paisSeleccionado, new SelectList(Model.listPaises, "idPais", "nombrePais", Model.paisSeleccionado), string.Empty, new { id = "ddlPaises" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Provincias", new { @class = "control-label col-md-2" })
+                <div id="Provincias" class="col-md-10">
+                    @if (Model.listProvincias != null && Model.listProvincias.Count() > 0)
+                    {
+                        @Html.HiddenFor(m => m.provinciaSeleccionada)
+                        @Html.DropDownListFor(m => m.Localidad.idProvincia, new SelectList(Model.listProvincias, "idProvincia", "nombreProvincia", Model.provinciaSeleccionada), string.Empty, new { id = "ddlProvincias" })
+                    }
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Localidades", new { @class = "control-label col-md-2" })
+                <div id="Localidades" class="col-md-10">
+                    @if (Model.listLocalidades != null && Model.listLocalidades.Count() > 0)
+                    {
+                        @Html.DropDownListFor(m => m.localidadSeleccionada, new SelectList(Model.listLocalidades, "idLocalidad", "nombreLocalidad", Model.localidadSeleccionada), string.Empty, new { id = "ddlProvincias" })
+                    }
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.barrio, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.barrio, new { id = "barrio" })
+                    @Html.ValidationMessageFor(model => model.barrio)
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.calle, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.calle, new { id = "calle" })
+                    @Html.ValidationMessageFor(model => model.calle)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.numero, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.numero, new { id = "numero" })
+                    @Html.ValidationMessageFor(model => model.numero)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.dpto, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.dpto, new { id = "dpto" })
+                    @Html.ValidationMessageFor(model => model.dpto)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Registrar Domicilio" class="btn btn-default" />
+                </div>
+            </div>
+
+        </div>
+    }
+</body>
+</html>

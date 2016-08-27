@@ -1,0 +1,503 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    background-color: #fff;    
+    margin-bottom:0px;
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+a
+{
+	text-decoration: none;
+	font-family:Helvetica Neue, Helvetica, Arial;
+}
+
+input#submit{
+	color:#08233e;
+	font:1.2em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+	padding:1px;
+}
+
+button#submit
+{
+	color:#08233e;
+	font:1.2em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+	padding:1px;
+}
+
+a#navigate
+{
+	background-image:url('../../Content/img/Layout1/back.png');
+}
+
+input#text
+{
+	font-size:1.0em;
+	font-family: ‘Century Gothic’, AppleGothic, sans-serif;
+}
+
+a:link {
+    color: #1F4C63;
+    /*text-decoration: underline;*/
+    font-size: 14px
+}
+
+a.strong
+{
+	color: #034af3;
+	/*text-decoration: underline;*/
+	font-size: 22px
+}
+
+a:visited {
+    color: #1F4C63;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1F4C63;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+.footer
+{
+	font-size: 12px;
+	color:#696969;
+}
+
+img
+{
+	border:0px;
+}
+
+h4 img
+{
+	vertical-align:middle;  
+}
+
+.wrapper {width:100%; overflow:hidden}
+
+.pad_top {padding-top:5px}
+
+.pad_bottom {padding-bottom:10px}
+
+.marg_right {margin-right:15px}
+
+.text_align_center { text-align:center; }
+
+.margin_top_20px { margin-top:20px; }
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #222222;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    /*padding: 0 0 10px 0;*/
+    font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+	background-color: #fff;
+	color: #000;	
+	padding: 5px 0;
+	margin: 4px 0 5px 0;
+	border-top:4px solid #000;
+	border-bottom:4px solid #000;	
+	vertical-align:middle;
+}
+
+legend
+{
+	font-size: 1.6em;
+	Tahoma, Geneva, sans-serif; 
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-left:20px;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+.article
+{
+	font-size: 14px;
+}
+
+strong
+{
+	font-weight:bolder;
+	font-size: 16px;
+	text-decoration:none;
+}
+
+.caption
+{
+   font-size: 0.9em;
+   font-weight:bolder;
+   font-family:"Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #222222;
+    border: none;
+    line-height: 2em;
+    font-size: 30px !important;    
+}
+
+#main {
+    padding:0 0 15px 0;
+    background-color: #fff;         
+    margin-top:0px;   
+    float:left;
+    width:100%;
+}
+
+footer, 
+#footer {
+    background-color: #fff;
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    clear: both;   
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0.4em 1.1em 1.1em 1.1em;
+    margin: 8px 0 1.5em 0;    
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 85px;
+    min-width:55px;
+    height:100%;
+    width:90%;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.0em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.0em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: #555555;
+}
+
+#logindisplay a:hover
+{
+color:white;       
+}    
+#logindisplay a:visited
+{
+color:#505050 ;        
+}
+#logindisplay a:link
+{
+color:#505050 ;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+/* Style for single page with two columes */
+.right
+{		
+	float:right;
+}
+
+.left
+{	
+	float:left;
+	margin-left:20px;
+}
+
+.schedule
+{	
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+}
+
+span.ui-icon-circle-triangle-w
+{
+	font-size:16px;	
+}
+
+span.ui-icon-circle-triangle-e
+{
+	font-size:16px;
+	margin-left:30px;
+}
+
+.lblDisplay
+{
+	font-weight: bold;	
+	color:#37607D;	
+}
+
+/*********datepicker*********/
+
+div#component-calendar-head
+{	
+	padding-top:12px;
+}
+
+div#component-header
+{
+	width:100%;
+	text-align:center;
+	background-color:#555555;
+	height:50px;
+	color:#B2B2B2;
+	font-size: 25px;    
+}
+
+table#component-table
+{
+	width:100%;
+	padding:0px;
+	border: 1px solid #B2B2B2;		
+	border-spacing:0px;
+}
+
+table#component-table th
+{
+	padding:0px;
+	height:30px;
+	background-color:#333333;
+	text-align:center;
+	color:#B2B2B2;		
+	font-size:16px;	
+	border-spacing:0px;	
+}
+
+table#component-table td
+{
+	padding:1px;
+	border:0px none #fff;
+	text-align:center;
+	color:#1F4C63;
+	height: 40px;	
+	background-color:#fff;	
+}
+
+table#component-table td.mouseover
+{
+    /*border:1px dashed red;*/
+    background-color:#FFDFCC;	
+}
+
+table#component-table td h3
+{
+	font-size: 22px;
+	color:#1F4C63;
+	margin:22%;
+}
+
+table#component-table td h4
+{
+	font-size: 11px;	
+	color:#1F4C63;
+}
+
+table#component-table td.selected
+{
+	background-color:#02BAB5;
+	color:#fff;	
+}
+
+table#component-table td.selected h3
+{	
+	color:#fff;
+}
+
+table#component-table td.selected h4
+{	
+	color:#fff;
+}
+
+table#component-table td.weekend
+{
+	background-color:#B2E205;
+	color:#fff;
+	border-top: 1px solid #B2B2B2;
+}
+
+table#component-table td.weekend h3
+{	
+	color:#000;
+}
+
+table#component-table td.weekend h4
+{	
+	color:#000;
+}
+
+table#component-table tr
+{
+	padding:0px;
+	border:0px;
+}
+
+div#component-schedule
+{
+	margin-top: 10px;
+}
+
+.month
+{
+	cursor:pointer;
+	font-size:16px;
+}
+

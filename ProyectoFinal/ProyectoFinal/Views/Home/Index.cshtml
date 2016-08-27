@@ -1,0 +1,196 @@
+﻿@model  BussinesEntities.UsuarioEntity
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: MAIN CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,200,100,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/iCheck/skins/all.css">
+    <link rel="stylesheet" href="~/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.css">
+    <link rel="stylesheet" href="~/assets/plugins/animate.css/animate.min.css">
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR SUBVIEW CONTENTS -->
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="~/assets/plugins/summernote/dist/summernote.css">
+    <link rel="stylesheet" href="~/assets/plugins/fullcalendar/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="~/assets/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/DataTables/media/css/DT_bootstrap.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+    <!-- end: CSS REQUIRED FOR THIS SUBVIEW CONTENTS-->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link rel="stylesheet" href="~/assets/plugins/weather-icons/css/weather-icons.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/nvd3/nv.d3.min.css">
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- start: CORE CSS -->
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+    <link rel="stylesheet" href="~/assets/css/styles-responsive.css">
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+    <link rel="stylesheet" href="~/assets/css/themes/theme-default.css" type="text/css" id="skin_color">
+    <link rel="stylesheet" href="~/assets/css/print.css" type="text/css" media="print" />
+    <!-- end: CORE CSS -->
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+
+        var perfil = @ViewBag.Perfil
+
+        $(document).ready(function () {
+            if (perfil == 4) {
+                $("#btnGestionUsuarios").show();
+            }
+
+            if (perfil == 1 || perfil==0) {
+                $("#btnRegistrarNegocio").show();
+            }
+
+        });      
+               
+    </script>
+
+</head>
+<body>
+    <section class="section-white">
+        <div class="container">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 800px; margin: 0 auto; ">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class=" item active">
+                        <img src="http://veterans4you.com/wp-content/uploads/2013/03/landscape-7-800x400.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h2>Heading</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Milna,_Bra%C4%8D,_Hrvatska_-_Blata%C5%A1ka_riva_800x400.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <h2>Heading</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://www.sleepzone.ie/uploads/images/PanelImages800x400/Connemara/General/sleepzone_hostels_connemara_800x400_5.JPG" alt="...">
+                        <div class="carousel-caption">
+                            <h2>Heading</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    
+        <div class="panel-heading">
+           
+        </div>
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <button class="btn btn-green btn-lg btn-block" onclick="window.location='Usuarios/Index'" id="btnGestionUsuarios" style="display:none">GESTIÓN DE USUARIOS <i class="fa fa-use"></i></button>
+
+                    <button class="btn btn-green btn-lg btn-block" onclick="window.location='Negocios/Nuevo'" id="btnRegistrarNegocio" style="display:none"> REGISTRÁ TU NEGOCIO AQUÍ <i class="fa fa-bank"></i></button>
+                </div>
+                <div class="col-lg-8">
+
+                </div>
+            </div>
+
+
+            
+
+        </div>
+    
+            
+    
+            <br />
+            <script src="~/assets/plugins/jQuery/jquery-2.1.1.min.js"></script>
+            <!--<![endif]-->
+            <script src="~/assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+            <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <script src="~/assets/plugins/blockUI/jquery.blockUI.js"></script>
+            <script src="~/assets/plugins/iCheck/jquery.icheck.min.js"></script>
+            <script src="~/assets/plugins/moment/min/moment.min.js"></script>
+            <script src="~/assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+            <script src="~/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+            <script src="~/assets/plugins/bootbox/bootbox.min.js"></script>
+            <script src="~/assets/plugins/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+            <script src="~/assets/plugins/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+            <script src="~/assets/plugins/jquery.appear/jquery.appear.js"></script>
+            <script src="~/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+            <script src="~/assets/plugins/velocity/jquery.velocity.min.js"></script>
+            <script src="~/assets/plugins/TouchSwipe/jquery.touchSwipe.min.js"></script>
+            <!-- end: MAIN JAVASCRIPTS -->
+            <!-- start: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+            <script src="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+            <script src="~/assets/plugins/jquery-mockjax/jquery.mockjax.js"></script>
+            <script src="~/assets/plugins/toastr/toastr.js"></script>
+            <script src="~/assets/plugins/bootstrap-modal/js/bootstrap-modal.js"></script>
+            <script src="~/assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+            <script src="~/assets/plugins/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+            <script src="~/assets/plugins/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+            <script src="~/assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+            <script src="~/assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+            <script src="~/assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+            <script src="~/assets/plugins/DataTables/media/js/jquery.dataTables.min.js"></script>
+            <script src="~/assets/plugins/DataTables/media/js/DT_bootstrap.js"></script>
+            <script src="~/assets/plugins/truncate/jquery.truncate.js"></script>
+            <script src="~/assets/plugins/summernote/dist/summernote.min.js"></script>
+            <script src="~/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+            <script src="~/assets/js/subview.js"></script>
+            <script src="~/assets/js/subview-examples.js"></script>
+            <!-- end: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
+            <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+            <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+            <!-- start: CORE JAVASCRIPTS  -->
+            <script src="~/assets/js/main.js"></script>
+            <!-- end: CORE JAVASCRIPTS  -->
+            <script>
+                jQuery(document).ready(function () {
+                    Main.init();
+                    SVExamples.init();
+                });
+            </script>
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\DL.dll.config
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\DL.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\DL.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\DAL.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\DAL.pdb
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\obj\Debug\DL.dll
+D:\Facultad\5to Año\Proyecto Final\Implementacion\ProyectoFinal\DL\obj\Debug\DL.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll.config
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.pdb
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.dll
+C:\Users\MATIAS\Dropbox\Proyecto Final 2014\Implementación\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll.config
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.pdb
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.dll
+C:\Proyecto Final 2\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll.config
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.pdb
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.dll
+C:\Proyecto Final\branches\branch-1.1-BackEnd-1Iteracion\Mati\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll.config
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DL.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\DAL.pdb
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.dll
+C:\Users\enabarro\Desktop\FINAL\ProyectoFinal\ProyectoFinal\DL\obj\Debug\DL.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DL.dll.config
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DL.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DL.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DAL.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DAL.pdb
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\obj\Debug\DL.dll
+D:\SITCOM\proyecto-final-turismo\trunk\V 1.1\ProyectoFinal\DL\obj\Debug\DL.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DL.dll.config
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DL.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DL.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DAL.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\DAL.pdb
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\obj\Debug\DL.dll
+C:\Proyecto Final\trunk\V 1.1\ProyectoFinal\DL\obj\Debug\DL.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\DL.dll.config
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\DL.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\DL.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\BussinesEntities.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\DAL.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\EntityFramework.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\BussinesEntities.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\DAL.pdb
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\EntityFramework.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\obj\Debug\DL.dll
+C:\Users\enabarro\Desktop\Emi 20082016\ProyectoFinal\DL\obj\Debug\DL.pdb

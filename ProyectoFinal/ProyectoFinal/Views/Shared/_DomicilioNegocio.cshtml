@@ -1,0 +1,63 @@
+﻿@model BussinesEntities.NegocioEntity
+
+<div class="form-group">
+    @Html.Label("Paises", new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(m => m.Sucursal.FirstOrDefault().Domicilio.paisSeleccionado, new SelectList(Model.Sucursal.FirstOrDefault().Domicilio.listPaises, "idPais", "nombrePais", Model.Sucursal.FirstOrDefault().Domicilio.paisSeleccionado), string.Empty, new { id = "ddlPaises" })
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.Label("Provincias", new { @class = "control-label col-md-2" })
+    <div id="Provincias" class="col-md-10">
+        @if (Model.Sucursal.FirstOrDefault().Domicilio.provinciaSeleccionada != null && Model.Sucursal.FirstOrDefault().Domicilio.listProvincias.Count() > 0)
+        {
+            @Html.HiddenFor(m => m.Sucursal.FirstOrDefault().Domicilio.provinciaSeleccionada)
+            @Html.DropDownListFor(m => m.Sucursal.FirstOrDefault().Domicilio.Localidad.idProvincia, new SelectList(Model.Sucursal.FirstOrDefault().Domicilio.listProvincias, "idProvincia", "nombreProvincia", Model.Sucursal.FirstOrDefault().Domicilio.provinciaSeleccionada), string.Empty, new { id = "ddlProvincias" })
+        }
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.Label("Localidades", new { @class = "control-label col-md-2" })
+    <div id="Localidades" class="col-md-10">
+        @if (Model.Sucursal.FirstOrDefault().Domicilio.localidadSeleccionada != null && Model.Sucursal.FirstOrDefault().Domicilio.listLocalidades.Count() > 0)
+        {
+            @Html.DropDownListFor(m => m.Sucursal.FirstOrDefault().Domicilio.localidadSeleccionada, new SelectList(Model.Sucursal.FirstOrDefault().Domicilio.listLocalidades, "idLocalidad", "nombreLocalidad", Model.Sucursal.FirstOrDefault().Domicilio.localidadSeleccionada), string.Empty)
+        }
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.barrio)
+    </div>
+</div>
+
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.calle)
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.numero)
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto)
+        @Html.ValidationMessageFor(model => model.Sucursal.FirstOrDefault().Domicilio.dpto)
+    </div>
+</div>
+<br />

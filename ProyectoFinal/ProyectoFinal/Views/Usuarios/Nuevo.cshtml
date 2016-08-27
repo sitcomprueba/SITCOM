@@ -1,0 +1,152 @@
+﻿@model BussinesEntities.UsuarioEntity
+
+@{
+    ViewBag.Title = "ALTA DE USUARIO";
+}
+
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: MAIN CSS -->
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/animate.css/animate.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/iCheck/skins/all.css">
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+    <link rel="stylesheet" href="~/assets/css/styles-responsive.css">
+    <link rel="stylesheet" href="~/assets/plugins/iCheck/skins/all.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.custom.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+
+        var perfil = @ViewBag.Perfil
+
+        $(document).ready(function(){
+            if (perfil == 4) {
+                $("#ddlPerfiles").show();
+                $("#lblPerfil").show();
+            }
+        });
+
+    </script>
+
+</head>
+<body class="login">
+    <div class="row">
+        <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="box-register" style="display:block">
+                <h2>Crear Usuario</h2>
+
+                @using (Html.BeginForm(new { @class = "form-register" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <fieldset>
+                     
+                            <hr />
+                            @Html.ValidationSummary(true)
+
+                            <div class="form-group">
+                                @*@Html.Label("Nombre de Usuario (Mail):", new { @class = "control-label col-md-2" })*@
+                                <span class="input-icon">
+                                    @Html.TextBoxFor(model => model.nombreUsuario, new { id = "form-field-1", @class = "form-control", placeholder = "Email" })
+                                    @Html.ValidationMessageFor(model => model.nombreUsuario)
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+
+                            <div class="form-group">
+                                @*@Html.Label("Password:", new { @class = "control-label col-md-2" })*@
+                                <span class="input-icon">
+                                    @Html.PasswordFor(model => model.password, new { @class="form-control" , name="password", placeholder="Contraseña"})
+                                    @Html.ValidationMessageFor(model => model.password)
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+
+                            <div class="form-group">
+                                @*@Html.Label("Confirmar Password:", new { @class = "control-label col-md-2" })*@
+                                <span class="input-icon">
+                                    @Html.PasswordFor(model => model.confirmarPassword, new { @class="form-control" ,name="password_again" ,placeholder="Repita su Contraseña"})
+                                    @Html.ValidationMessageFor(model => model.confirmarPassword)
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+
+                            <div class="form-group">
+                                @*@Html.Label("Perfil:", new { @class = "control-label col-md-2", id = "lblPerfil", style = "display:none" })*@
+                                <div class="col-md-10">
+                                    @Html.DropDownListFor(model => model.idPerfil, (SelectList)ViewBag.Perfiles, "-- SELECCIONA EL PERFIL --", new { id = "ddlPerfiles", style = "display:none; width:300px; height:35px;" })
+                                    @Html.ValidationMessageFor(model => model.idPerfil)
+                                </div>
+                            </div>
+                        @*<div class="form-group">
+                            <div>
+                                <label for="agree" class="checkbox-inline">
+                                    <input type="checkbox" class="grey agree" id="agree" name="agree">
+                                    Acepto los terminos, condiciones y politicas de seguridad 
+                                </label>
+                            </div>
+                        </div>*@
+                        <br/>
+                        <br />
+                        <div class="form-actions">
+
+                            <button type="submit" class="btn btn-green pull-left">
+                                REGISTRAR
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </button>
+
+                        </div>
+                            @ViewBag.Error
+                        
+                    </fieldset>
+                  
+                }
+            </div>
+        </div>
+        @*<div>
+            @Html.ActionLink("Volver", "Index")
+        </div>*@
+    </div>
+   
+
+    
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script src="assets/plugins/jQuery/jquery-2.1.1.min.js"></script>
+        <!--<![endif]-->
+        <script src="~/assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+        <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/assets/plugins/iCheck/jquery.icheck.min.js"></script>
+        <script src="~/assets/plugins/jquery.transit/jquery.transit.js"></script>
+        <script src="~/assets/plugins/TouchSwipe/jquery.touchSwipe.min.js"></script>
+        <script src="~/assets/js/main.js"></script>
+        <!-- end: MAIN JAVASCRIPTS -->
+        <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+        <script src="~/assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/assets/js/login.js"></script>
+        <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+        <script>
+            jQuery(document).ready(function () {
+                Main.init();
+                Login.init();
+            });
+        </script>
+    }
+</body>
+
+</html>

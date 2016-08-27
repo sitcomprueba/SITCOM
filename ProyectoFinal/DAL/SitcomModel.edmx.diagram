@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4a7c6aa3c85a46cf984d16716e45d016" Name="Diagram1">
+        <EntityTypeShape EntityType="SitcomModel.Caracteristica" Width="1.5" PointX="16.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.CaracteristicasHospedaje" Width="1.5" PointX="18.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.CasaDptoOCabana" Width="1.5" PointX="21.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.CategoriaCaracteristicas" Width="1.5" PointX="14.25" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.CategoriaHospedaje" Width="1.5" PointX="16.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Comercio" Width="1.5" PointX="13.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Complejo" Width="1.5" PointX="18.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Disponibilidad" Width="1.5" PointX="24" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Domicilio" Width="1.5" PointX="1.5" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.EstadoReserva" Width="1.5" PointX="21.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.EstadoTramite" Width="1.5" PointX="14.25" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.FotosNegocio" Width="1.5" PointX="13.5" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.FotosUsuario" Width="1.5" PointX="8.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Habitacion" Width="1.5" PointX="21" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Hotel" Width="1.5" PointX="18.75" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Localidad" Width="1.5" PointX="1.5" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.LugarHospedaje" Width="1.5" PointX="16.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Negocio" Width="1.5" PointX="11.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Paginas" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.PaginasXPerfil" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Pais" Width="1.5" PointX="1.5" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Perfiles" Width="1.5" PointX="0.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Persona" Width="1.5" PointX="3.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Provincia" Width="1.5" PointX="1.5" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Rubro" Width="1.5" PointX="11.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Sexo" Width="1.5" PointX="1.5" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Solicitud" Width="1.5" PointX="13.5" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Sucursal" Width="1.5" PointX="16.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Telefono" Width="1.5" PointX="1.5" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoCaracteristica" Width="1.5" PointX="14.25" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoComplejo" Width="1.5" PointX="16.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoDeNegocio" Width="1.5" PointX="9" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoDocumento" Width="1.5" PointX="1.5" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoHabitacion" Width="1.5" PointX="18.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoLugarHospedaje" Width="1.5" PointX="14.25" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.TipoTramite" Width="1.5" PointX="14.25" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Tramite" Width="1.5" PointX="16.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitcomModel.Usuarios" Width="1.5" PointX="6" PointY="18.5" IsExpanded="true" />
+        <AssociationConnector Association="SitcomModel.FK_Caracteristica_CategoriaCaracteristicas" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Caracteristica_TipoCaracteristica" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_CaracteristicasHospedaje_Caracteristicas" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_CaracteristicasHospedaje_LugarHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_CasaDptoOCabana_Complejo" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_CasaDptoOCabana_LugarHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Disponibilidad_CasaDptoOCabana" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Complejo_CategoriaHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Hotel_CategoriaHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Comercio_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Comercio_Rubro" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Complejo_LugarHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Complejo_TipoComplejo" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Disponibilidad_EstadoReserva" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Disponibilidad_Habitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Domicilio_Localidad" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Persona_Domicilio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Sucursal_Domicilio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Tramite_EstadoTramite" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_FotosNegocio_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_FotosUsuario_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Habitacion_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Habitacion_TipoHabitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Hotel_LugarHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Localidad_Provincia" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_LugarHospedaje_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_LugarHospedaje_TipoLugarHospedaje" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Negocio_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Negocio_TipoDeNegocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Negocio_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Solicitud_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Sucursal_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Tramite_Negocio" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_PaginasXPerfil_Paginas" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_PaginasXPerfil_Perfiles" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Provincia_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Usuarios_Perfiles" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Persona_Sexo" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Persona_Telefono" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Persona_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Usuarios_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Solicitud_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Tramite_TipoTramite" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Tramite_UsuarioResponsable" ManuallyRouted="false" />
+        <AssociationConnector Association="SitcomModel.FK_Tramite_UsuarioSolicitante" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

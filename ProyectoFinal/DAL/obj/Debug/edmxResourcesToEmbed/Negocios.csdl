@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CategoriaHospedaje">
+    <Key>
+      <PropertyRef Name="idCategoria" />
+    </Key>
+    <Property Name="idCategoria" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_LugarHospedaje_CategoriaHospedaje" FromRole="CategoriaHospedaje" ToRole="LugarHospedaje" />
+  </EntityType>
+  <EntityType Name="Comercio">
+    <Key>
+      <PropertyRef Name="idComercio" />
+    </Key>
+    <Property Name="idComercio" Type="Int32" Nullable="false" />
+    <Property Name="idNegocio" Type="Int32" />
+    <Property Name="idRubro" Type="Int32" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Comercio_Negocio" FromRole="Comercio" ToRole="Negocio" />
+    <NavigationProperty Name="Sucursal" Relationship="Self.FK_Sucursal_Comercio" FromRole="Comercio" ToRole="Sucursal" />
+  </EntityType>
+  <EntityType Name="Domicilio">
+    <Key>
+      <PropertyRef Name="idDomicilio" />
+    </Key>
+    <Property Name="idDomicilio" Type="Int32" Nullable="false" />
+    <Property Name="calle" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="numero" Type="Int32" />
+    <Property Name="dpto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="barrio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idLocalidad" Type="Int32" />
+    <NavigationProperty Name="Localidad" Relationship="Self.FK_Domicilio_Localidad" FromRole="Domicilio" ToRole="Localidad" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_Domicilio" FromRole="Domicilio" ToRole="Persona" />
+    <NavigationProperty Name="Sucursal" Relationship="Self.FK_Sucursal_Domicilio" FromRole="Domicilio" ToRole="Sucursal" />
+  </EntityType>
+  <EntityType Name="Localidad">
+    <Key>
+      <PropertyRef Name="idLocalidad" />
+    </Key>
+    <Property Name="idLocalidad" Type="Int32" Nullable="false" />
+    <Property Name="nombreLocalidad" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idProvincia" Type="Int32" />
+    <NavigationProperty Name="Domicilio" Relationship="Self.FK_Domicilio_Localidad" FromRole="Localidad" ToRole="Domicilio" />
+    <NavigationProperty Name="Provincia" Relationship="Self.FK_Localidad_Provincia" FromRole="Localidad" ToRole="Provincia" />
+  </EntityType>
+  <EntityType Name="LugarHospedaje">
+    <Key>
+      <PropertyRef Name="idLugarHospedaje" />
+    </Key>
+    <Property Name="idLugarHospedaje" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="cantidadAmbientes" Type="Int32" />
+    <Property Name="cantidadHabitaciones" Type="Int32" />
+    <Property Name="cantidadBanios" Type="Int32" />
+    <Property Name="idComplejo" Type="Int32" />
+    <Property Name="idNegocio" Type="Int32" />
+    <Property Name="idTipoLugarHospedaje" Type="Int32" />
+    <Property Name="idCategoria" Type="Int32" />
+    <NavigationProperty Name="CategoriaHospedaje" Relationship="Self.FK_LugarHospedaje_CategoriaHospedaje" FromRole="LugarHospedaje" ToRole="CategoriaHospedaje" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_LugarHospedaje_Negocio" FromRole="LugarHospedaje" ToRole="Negocio" />
+    <NavigationProperty Name="TipoLugarHospedaje" Relationship="Self.FK_LugarHospedaje_TipoLugarHospedaje" FromRole="LugarHospedaje" ToRole="TipoLugarHospedaje" />
+  </EntityType>
+  <EntityType Name="Negocio">
+    <Key>
+      <PropertyRef Name="idNegocio" />
+    </Key>
+    <Property Name="idNegocio" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="fechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="idTipoNegocio" Type="Int32" />
+    <Property Name="idUsuario" Type="Int32" />
+    <NavigationProperty Name="Comercio" Relationship="Self.FK_Comercio_Negocio" FromRole="Negocio" ToRole="Comercio" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_LugarHospedaje_Negocio" FromRole="Negocio" ToRole="LugarHospedaje" />
+    <NavigationProperty Name="TipoDeNegocio" Relationship="Self.FK_Negocio_TipoDeNegocio" FromRole="Negocio" ToRole="TipoDeNegocio" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Negocio_Usuario" FromRole="Negocio" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Paginas">
+    <Key>
+      <PropertyRef Name="idPagina" />
+    </Key>
+    <Property Name="idPagina" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombrePagina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="controlador" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vista" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="PaginasXPerfil" Relationship="Self.FK_PaginasXPerfil_Paginas" FromRole="Paginas" ToRole="PaginasXPerfil" />
+  </EntityType>
+  <EntityType Name="PaginasXPerfil">
+    <Key>
+      <PropertyRef Name="idPaginaXPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="Int32" Nullable="false" />
+    <Property Name="idPagina" Type="Int32" Nullable="false" />
+    <Property Name="idPaginaXPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Paginas" Relationship="Self.FK_PaginasXPerfil_Paginas" FromRole="PaginasXPerfil" ToRole="Paginas" />
+    <NavigationProperty Name="Perfiles" Relationship="Self.FK_PaginasXPerfil_Perfiles" FromRole="PaginasXPerfil" ToRole="Perfiles" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="idPais" />
+    </Key>
+    <Property Name="idPais" Type="Int32" Nullable="false" />
+    <Property Name="nombrePais" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Provincia" Relationship="Self.FK_Provincia_Pais" FromRole="Pais" ToRole="Provincia" />
+  </EntityType>
+  <EntityType Name="Perfiles">
+    <Key>
+      <PropertyRef Name="idPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PaginasXPerfil" Relationship="Self.FK_PaginasXPerfil_Perfiles" FromRole="Perfiles" ToRole="PaginasXPerfil" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Usuarios_Perfiles" FromRole="Perfiles" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="documento" Type="Int32" />
+    <Property Name="idSexo" Type="Int32" />
+    <Property Name="idTelefono" Type="Int32" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="idDomicilio" Type="Int32" />
+    <NavigationProperty Name="Domicilio" Relationship="Self.FK_Persona_Domicilio" FromRole="Persona" ToRole="Domicilio" />
+    <NavigationProperty Name="Telefono" Relationship="Self.FK_Persona_Telefono" FromRole="Persona" ToRole="Telefono" />
+    <NavigationProperty Name="TipoDocumento" Relationship="Self.FK_Persona_TipoDocumento" FromRole="Persona" ToRole="TipoDocumento" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="idProvincia" />
+    </Key>
+    <Property Name="idProvincia" Type="Int32" Nullable="false" />
+    <Property Name="nombreProvincia" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idPais" Type="Int32" />
+    <NavigationProperty Name="Localidad" Relationship="Self.FK_Localidad_Provincia" FromRole="Provincia" ToRole="Localidad" />
+    <NavigationProperty Name="Pais" Relationship="Self.FK_Provincia_Pais" FromRole="Provincia" ToRole="Pais" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="idSucursal" />
+    </Key>
+    <Property Name="idSucursal" Type="Int32" Nullable="false" />
+    <Property Name="nombreSucursal" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idDomicilio" Type="Int32" />
+    <Property Name="idComercio" Type="Int32" />
+    <Property Name="telefono" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Comercio" Relationship="Self.FK_Sucursal_Comercio" FromRole="Sucursal" ToRole="Comercio" />
+    <NavigationProperty Name="Domicilio" Relationship="Self.FK_Sucursal_Domicilio" FromRole="Sucursal" ToRole="Domicilio" />
+  </EntityType>
+  <EntityType Name="Telefono">
+    <Key>
+      <PropertyRef Name="idTelefono" />
+    </Key>
+    <Property Name="idTelefono" Type="Int32" Nullable="false" />
+    <Property Name="movil" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="fijo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="alternativo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_Telefono" FromRole="Telefono" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoDeNegocio">
+    <Key>
+      <PropertyRef Name="idTipoNegocio" />
+    </Key>
+    <Property Name="idTipoNegocio" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Negocio_TipoDeNegocio" FromRole="TipoDeNegocio" ToRole="Negocio" />
+  </EntityType>
+  <EntityType Name="TipoDocumento">
+    <Key>
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idTipoDocumento" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_TipoDocumento" FromRole="TipoDocumento" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoLugarHospedaje">
+    <Key>
+      <PropertyRef Name="idTipoLugarHospedaje" />
+    </Key>
+    <Property Name="idTipoLugarHospedaje" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LugarHospedaje" Relationship="Self.FK_LugarHospedaje_TipoLugarHospedaje" FromRole="TipoLugarHospedaje" ToRole="LugarHospedaje" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="idPerfil" Type="Int32" />
+    <Property Name="idPersona" Type="Int32" />
+    <NavigationProperty Name="Negocio" Relationship="Self.FK_Negocio_Usuario" FromRole="Usuarios" ToRole="Negocio" />
+    <NavigationProperty Name="Perfiles" Relationship="Self.FK_Usuarios_Perfiles" FromRole="Usuarios" ToRole="Perfiles" />
+  </EntityType>
+  <EntityType Name="EstadoTramite">
+    <Key>
+      <PropertyRef Name="idEstadoTramite" />
+    </Key>
+    <Property Name="idEstadoTramite" Type="Int32" Nullable="false" />
+    <Property Name="nombreEstadoTramite" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="value" Type="Boolean" Nullable="false" />
+    <Property Name="major_version" Type="Int32" Nullable="false" />
+    <Property Name="minor_version" Type="Int32" Nullable="false" />
+    <Property Name="revision" Type="Int32" Nullable="false" />
+    <Property Name="install_failures" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_dbid" Type="Int16" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="version" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_low" Type="Int32" />
+    <Property Name="xfallback_drive" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="low" Type="Int32" Nullable="false" />
+    <Property Name="high" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phyname" Type="String" MaxLength="127" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_vstart" Type="Int32" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="segmap" Type="Int32" Nullable="false" />
+    <Property Name="lstart" Type="Int32" Nullable="false" />
+    <Property Name="sizepg" Type="Int32" Nullable="false" />
+    <Property Name="vstart" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cpu_busy" Type="Int32" Nullable="false" />
+    <Property Name="io_busy" Type="Int32" Nullable="false" />
+    <Property Name="idle" Type="Int32" Nullable="false" />
+    <Property Name="pack_received" Type="Int32" Nullable="false" />
+    <Property Name="pack_sent" Type="Int32" Nullable="false" />
+    <Property Name="connections" Type="Int32" Nullable="false" />
+    <Property Name="pack_errors" Type="Int32" Nullable="false" />
+    <Property Name="total_read" Type="Int32" Nullable="false" />
+    <Property Name="total_write" Type="Int32" Nullable="false" />
+    <Property Name="total_errors" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoHabitacion">
+    <Key>
+      <PropertyRef Name="idTipoHabitacion" />
+    </Key>
+    <Property Name="idTipoHabitacion" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tramite">
+    <Key>
+      <PropertyRef Name="idTramite" />
+    </Key>
+    <Property Name="idTramite" Type="Int32" Nullable="false" />
+    <Property Name="idEstadoTramite" Type="Int32" />
+    <Property Name="fechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="fechaFin" Type="DateTime" Precision="3" />
+    <Property Name="idUsuarioSolicitante" Type="Int32" />
+    <Property Name="idUsuarioResponsable" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_LugarHospedaje_CategoriaHospedaje">
+    <End Role="CategoriaHospedaje" Type="Self.CategoriaHospedaje" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriaHospedaje">
+        <PropertyRef Name="idCategoria" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comercio_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="Comercio" Type="Self.Comercio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="Comercio">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Comercio">
+    <End Role="Comercio" Type="Self.Comercio" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comercio">
+        <PropertyRef Name="idComercio" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idComercio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Domicilio_Localidad">
+    <End Role="Localidad" Type="Self.Localidad" Multiplicity="0..1" />
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidad">
+        <PropertyRef Name="idLocalidad" />
+      </Principal>
+      <Dependent Role="Domicilio">
+        <PropertyRef Name="idLocalidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Domicilio">
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domicilio">
+        <PropertyRef Name="idDomicilio" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idDomicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursal_Domicilio">
+    <End Role="Domicilio" Type="Self.Domicilio" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domicilio">
+        <PropertyRef Name="idDomicilio" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="idDomicilio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Localidad_Provincia">
+    <End Role="Provincia" Type="Self.Provincia" Multiplicity="0..1" />
+    <End Role="Localidad" Type="Self.Localidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="idProvincia" />
+      </Principal>
+      <Dependent Role="Localidad">
+        <PropertyRef Name="idProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_Negocio">
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Negocio">
+        <PropertyRef Name="idNegocio" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LugarHospedaje_TipoLugarHospedaje">
+    <End Role="TipoLugarHospedaje" Type="Self.TipoLugarHospedaje" Multiplicity="0..1" />
+    <End Role="LugarHospedaje" Type="Self.LugarHospedaje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoLugarHospedaje">
+        <PropertyRef Name="idTipoLugarHospedaje" />
+      </Principal>
+      <Dependent Role="LugarHospedaje">
+        <PropertyRef Name="idTipoLugarHospedaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_TipoDeNegocio">
+    <End Role="TipoDeNegocio" Type="Self.TipoDeNegocio" Multiplicity="0..1" />
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDeNegocio">
+        <PropertyRef Name="idTipoNegocio" />
+      </Principal>
+      <Dependent Role="Negocio">
+        <PropertyRef Name="idTipoNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Negocio_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Negocio" Type="Self.Negocio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Negocio">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaginasXPerfil_Paginas">
+    <End Role="Paginas" Type="Self.Paginas" Multiplicity="1" />
+    <End Role="PaginasXPerfil" Type="Self.PaginasXPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paginas">
+        <PropertyRef Name="idPagina" />
+      </Principal>
+      <Dependent Role="PaginasXPerfil">
+        <PropertyRef Name="idPagina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaginasXPerfil_Perfiles">
+    <End Role="Perfiles" Type="Self.Perfiles" Multiplicity="1" />
+    <End Role="PaginasXPerfil" Type="Self.PaginasXPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfiles">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="PaginasXPerfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provincia_Pais">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="0..1" />
+    <End Role="Provincia" Type="Self.Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="idPais" />
+      </Principal>
+      <Dependent Role="Provincia">
+        <PropertyRef Name="idPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Perfiles">
+    <End Role="Perfiles" Type="Self.Perfiles" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfiles">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Telefono">
+    <End Role="Telefono" Type="Self.Telefono" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Telefono">
+        <PropertyRef Name="idTelefono" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTelefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_TipoDocumento">
+    <End Role="TipoDocumento" Type="Self.TipoDocumento" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDocumento">
+        <PropertyRef Name="idTipoDocumento" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NegociosEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CategoriaHospedaje" EntityType="Self.CategoriaHospedaje" />
+    <EntitySet Name="Comercio" EntityType="Self.Comercio" />
+    <EntitySet Name="Domicilio" EntityType="Self.Domicilio" />
+    <EntitySet Name="Localidad" EntityType="Self.Localidad" />
+    <EntitySet Name="LugarHospedaje" EntityType="Self.LugarHospedaje" />
+    <EntitySet Name="Negocio" EntityType="Self.Negocio" />
+    <EntitySet Name="Paginas" EntityType="Self.Paginas" />
+    <EntitySet Name="PaginasXPerfil" EntityType="Self.PaginasXPerfil" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" />
+    <EntitySet Name="Perfiles" EntityType="Self.Perfiles" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Provincia" EntityType="Self.Provincia" />
+    <EntitySet Name="Sucursal" EntityType="Self.Sucursal" />
+    <EntitySet Name="Telefono" EntityType="Self.Telefono" />
+    <EntitySet Name="TipoDeNegocio" EntityType="Self.TipoDeNegocio" />
+    <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" />
+    <EntitySet Name="TipoLugarHospedaje" EntityType="Self.TipoLugarHospedaje" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <EntitySet Name="EstadoTramite" EntityType="Self.EstadoTramite" />
+    <EntitySet Name="MSreplication_options" EntityType="Self.MSreplication_options" />
+    <EntitySet Name="spt_fallback_db" EntityType="Self.spt_fallback_db" />
+    <EntitySet Name="spt_fallback_dev" EntityType="Self.spt_fallback_dev" />
+    <EntitySet Name="spt_fallback_usg" EntityType="Self.spt_fallback_usg" />
+    <EntitySet Name="spt_monitor" EntityType="Self.spt_monitor" />
+    <EntitySet Name="TipoHabitacion" EntityType="Self.TipoHabitacion" />
+    <EntitySet Name="Tramite" EntityType="Self.Tramite" />
+    <AssociationSet Name="FK_LugarHospedaje_CategoriaHospedaje" Association="Self.FK_LugarHospedaje_CategoriaHospedaje">
+      <End Role="CategoriaHospedaje" EntitySet="CategoriaHospedaje" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comercio_Negocio" Association="Self.FK_Comercio_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="Comercio" EntitySet="Comercio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Comercio" Association="Self.FK_Sucursal_Comercio">
+      <End Role="Comercio" EntitySet="Comercio" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Domicilio_Localidad" Association="Self.FK_Domicilio_Localidad">
+      <End Role="Localidad" EntitySet="Localidad" />
+      <End Role="Domicilio" EntitySet="Domicilio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Domicilio" Association="Self.FK_Persona_Domicilio">
+      <End Role="Domicilio" EntitySet="Domicilio" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursal_Domicilio" Association="Self.FK_Sucursal_Domicilio">
+      <End Role="Domicilio" EntitySet="Domicilio" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Localidad_Provincia" Association="Self.FK_Localidad_Provincia">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Localidad" EntitySet="Localidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_Negocio" Association="Self.FK_LugarHospedaje_Negocio">
+      <End Role="Negocio" EntitySet="Negocio" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LugarHospedaje_TipoLugarHospedaje" Association="Self.FK_LugarHospedaje_TipoLugarHospedaje">
+      <End Role="TipoLugarHospedaje" EntitySet="TipoLugarHospedaje" />
+      <End Role="LugarHospedaje" EntitySet="LugarHospedaje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_TipoDeNegocio" Association="Self.FK_Negocio_TipoDeNegocio">
+      <End Role="TipoDeNegocio" EntitySet="TipoDeNegocio" />
+      <End Role="Negocio" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Negocio_Usuario" Association="Self.FK_Negocio_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Negocio" EntitySet="Negocio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaginasXPerfil_Paginas" Association="Self.FK_PaginasXPerfil_Paginas">
+      <End Role="Paginas" EntitySet="Paginas" />
+      <End Role="PaginasXPerfil" EntitySet="PaginasXPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaginasXPerfil_Perfiles" Association="Self.FK_PaginasXPerfil_Perfiles">
+      <End Role="Perfiles" EntitySet="Perfiles" />
+      <End Role="PaginasXPerfil" EntitySet="PaginasXPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provincia_Pais" Association="Self.FK_Provincia_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Provincia" EntitySet="Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Perfiles" Association="Self.FK_Usuarios_Perfiles">
+      <End Role="Perfiles" EntitySet="Perfiles" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Telefono" Association="Self.FK_Persona_Telefono">
+      <End Role="Telefono" EntitySet="Telefono" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_TipoDocumento" Association="Self.FK_Persona_TipoDocumento">
+      <End Role="TipoDocumento" EntitySet="TipoDocumento" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
